@@ -1,0 +1,24 @@
+<div class="list_wrapper">
+  <laitron-section-box [withBorder]="false">
+    <div class="header">
+      <p class="title">
+        {{ 'settings_module.user_management.all_users' | translate }}
+        <span class="count">{{ count }}</span>
+      </p>
+      <form [formGroup]="searchForm" class="right_section">
+        <laitron-input-form-field
+          formControlName="search"
+          placeholdertext="{{'general.search' | translate}}"
+          [color]="inputColor.PRIMARY13"
+          [prefix]="'search'">
+        </laitron-input-form-field>
+      </form>
+    </div>
+    <div>
+      <list-data-table [data]="dataTableData" [columnsDefinition]="dataTableColumnsDefinition"
+                       [paginatorConfig]="paginatorConfig" (clickAction)="actionClicked($event)"
+                       (more)="onPage($event)">
+      </list-data-table>
+    </div>
+  </laitron-section-box>
+</div>

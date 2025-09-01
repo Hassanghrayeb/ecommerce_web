@@ -1,0 +1,34 @@
+<nav class="side-nav">
+
+  <ul>
+    <li *ngFor="let item of displayedNavItems">
+      <a
+        [routerLink]="item.isDisabled ? null : item.routerLink"
+        routerLinkActive="active"
+        [matTooltip]="item.isDisabled ? ('billing.coming_soon' | translate) : (item.label | translate)"
+        [class.disabled]="item.isDisabled">
+        <span class="material-symbols-outlined icon">
+          {{ item.icon }}
+        </span>
+      </a>
+    </li>
+  </ul>
+  <div class="user-profile">
+    <div [matMenuTriggerFor]="profileMenu" class="initials">{{ profileName }}</div>
+  </div>
+</nav>
+
+<mat-menu #profileMenu="matMenu">
+  <div class="profile_menu">
+    <laitron-button
+      [buttonText]="'home.sidenav.logout' | translate"
+      [color]="inputColor.PRIMARY23"
+      [shape]="inputShape.PRIMARY"
+      [mode]="inputMode.DARK"
+      (buttonClick)="logout()"
+      [buttonIcon]="'logout'"
+      iconDirection="left"
+      class="menu_button"
+    ></laitron-button>
+  </div>
+</mat-menu>

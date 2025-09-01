@@ -1,0 +1,42 @@
+@import "src/assets/global-styles/base/base"
+
+.page-title
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+  &.with-border
+    border-bottom: 1px solid var(--primary-color-1-5)
+
+  & > div
+    display: flex
+    align-items: center
+    font-size: 1rem
+    color: var(--text-primary-color-1)
+    margin-bottom: 0.8rem
+    gap: 10px
+
+    .title-text
+      font-weight: 700
+      &.sm
+        font-size: 14px
+      &.md
+        font-size: 16px
+      &.bg
+        font-size: 20px
+      &.lg
+        font-size: 24px
+    .back
+      border-radius: 45px
+      padding: 12px
+      gap: 10px
+      background-color: var(--primary-color-1-2)
+      &:hover
+        background-color: var(--primary-color-1-4)
+
+  &.rtl
+    .back
+      transform: rotate(180deg)
+
+
+

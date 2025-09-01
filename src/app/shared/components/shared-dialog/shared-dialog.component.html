@@ -1,0 +1,31 @@
+<div class="dialog_wrapper" [dir]="direction" (keydown.enter)="handleEnterKey($event)" tabindex="0">
+  <div class="header">
+    <div class="title_row">
+      <p class="title">{{ title | translate }}</p>
+      <laitron-button *ngIf="headerButton"
+                      [buttonText]="headerButton.label | translate"
+                      [buttonIcon]="headerButton.icon"
+                      [iconDirection]="headerButton.iconDirection"
+                      [shape]="headerButton.shape"
+                      [color]="headerButton.color"
+                      [mode]="headerButton.mode"
+                      (buttonClick)="headerButton.action && headerButton.action(0)">
+      </laitron-button>
+    </div>
+    <p *ngIf="subTitle" class="sub_title">{{ subTitle | translate }}</p>
+  </div>
+  <div class="body">
+    <ng-content></ng-content>
+  </div>
+  <div class="actions" *ngIf="actionButtons">
+    <laitron-button *ngFor="let button of actionButtons"
+                   [buttonText]="button.label | translate"
+                   [buttonIcon]="button.icon"
+                   [iconDirection]="button.iconDirection"
+                   [shape]="button.shape"
+                   [color]="button.color"
+                   [mode]="button.mode"
+                   (buttonClick)="button.action && button.action(0)">
+    </laitron-button>
+  </div>
+</div>

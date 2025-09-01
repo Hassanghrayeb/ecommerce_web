@@ -1,0 +1,30 @@
+@import 'src/assets/global-styles/placeholders/placeholders'
+
+::ng-deep
+  .user-form-modal .mat-dialog-container
+    padding: 0px !important
+    border-radius: 15px !important
+
+.header
+  @extend %flexRowWrap
+  justify-content: space-between
+  width: 100%
+  .title
+    font-weight: 700
+    font-size: 15px
+    color: var(--text-primary-color-1)
+    .count
+      font-weight: 700
+      font-size: 24px
+      color: var(--text-primary-color-1)
+      margin-left: 10px
+  .right_section
+    @extend %flexRowWrap
+    gap: 10px
+    .action_btn
+      margin-top: 3px
+
+
+.add_btn
+  width: fit-content
+

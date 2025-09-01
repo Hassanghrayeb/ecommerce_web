@@ -1,0 +1,263 @@
+{
+  "general": {
+    "search": "Search",
+    "confirm": "Confirm",
+    "done": "Done",
+    "cancel": "Cancel",
+    "save": "Save",
+    "okay": "Okay",
+    "add": "Add",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "create": "Create",
+    "save_changes": "Save Changes",
+    "confirmation_message": "Are you sure?",
+    "timeout_error": "Request timed out",
+    "loading": "Loading...",
+    "all_selected": "All Selected",
+    "skip": "Skip",
+    "close": "Close"
+  },
+  "admin_module": {
+    "users": {
+      "username": "Username",
+      "enabled": "Enabled",
+      "access": "Access",
+      "groups": "Groups",
+      "credit_balance": "Credit Balance",
+      "remaining_credits": "Remaining Credits",
+      "update_status_success": "User status updated successfully",
+      "update_status_error": "Error updating user status",
+      "group_name": "Group Name",
+      "country": "Country",
+      "mobile_number": "Mobile Number",
+      "company": "Company",
+      "registration_date": "Registration Date"
+    },
+    "roles": {
+      "name": "Name"
+    }
+  },
+  "settings_module": {
+    "title": "Settings",
+    "sub_title": "Manage your account settings and preferences.",
+    "side_nav": {
+      "profile_information": "Profile Information",
+      "user_preferences": "User Preferences"
+    },
+    "profile_info": {
+      "profile_info" : "Profile information",
+      "profile_info_hint": "Manage your account information and email.",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "username": "Username",
+      "email": "Email address",
+      "add_email": "Add email",
+      "password": "Password",
+      "password_hint": "Modify your current password.",
+      "current_pass": "Current password",
+      "new_pass": "New password",
+      "account_security": "Account security",
+      "account_security_hint": "Manage your account security.",
+      "logout": "Logout",
+      "save": "Save",
+      "cancel": "Cancel",
+      "create_new_password": "Create new password",
+      "create_new_password_description": "Please choose a password that hasn’t been used before. Must be at least 8 characters.",
+      "confirm_password": "Confirm password",
+      "old_password": "Old password",
+      "set_new_password": "Set new password",
+      "confirm_new_password": "Confirm new password",
+      "continue": "Continue",
+      "enter_confirmation_code": "Enter the OTP sent to your email",
+      "registration_attempt_with_same_email": "we have a registration attempt with the same email, please verify with OTP to update the info you just provided",
+      "we_sent_you_code": "We sent you a code to"
+    },
+    "user_preferences": {
+      "theme": "Interface theme",
+      "theme_hint": "Select your system theme.",
+      "theme_light_mode": "Light mode",
+      "theme_dark_mode": "Dark mode",
+      "language": "Language",
+      "language_hint": "Choose system default language."
+    },
+    
+    "user_management": {
+      "user_management": "User management",
+      "description": "Add, remove, set permission of all users.",
+      "add_user": "Add user",
+      "not_allowed": "Sorry! It is not allowed to edit an admin user, please contact IT.",
+      "all_users": "All users",
+      "user_form": {
+        "title_edit": "Edit user",
+        "title_create": "Add user",
+        "user_description": "Define user credentials",
+        "username": "Username",
+        "password": "Password",
+        "enabled": "Enabled",
+        "roles": "Roles",
+        "user_groups": "User Groups",
+        "select": "Select",
+        "view_user": "View user",
+        "view_user_description": "See detailed information about this user"
+      }
+    },
+    "role_management": {
+      "all_roles": "All roles",
+      "role_management": "Role management",
+      "description": "Add, remove, set permission of all roles.",
+      "add_role": "Add role",
+      "delete_confirmation": "Deleted Successfully",
+      "role_form": {
+        "role_description": "Define role details",
+        "title_edit": "Edit role",
+        "title_create": "Add role",
+        "name": "Name",
+        "description": "Description",
+        "permissions": "Permissions"
+      }
+    }
+  },
+  "catalog_module": {
+    "cart": {
+      "your": "Your Cart",
+      "sub_total": "Subtotal",
+      "total": "Total",
+      "clear": "Clear",
+      "checkout": "Chekout",
+      "empty": "Your cart is empty."
+    }
+  },
+  "configuration_module": {
+    "title": "Configurations",
+    "sub_title": "Manage your account settings and preferences.",
+    "side_nav": {
+      "user_management": "User Management",
+      "user_request_management": "User Request Management",
+      "product_management": "Product Management",
+      "user_group": "User Group",
+      "role_management": "Role Management",
+      "subscription_management": "Subscription Management",
+      "features_management": "Features Management",
+      "lookups_management": "Lookups Management",
+      "dataset_management": "Dataset Management",
+      "order_management": "Order Management",
+      "cart_management": "Cart Management",
+      "countries_collection_management": "Default Collection Management"
+    },
+    "product_management": {
+      "all_products": " All Products",
+      "add_product": "Add Product",
+      "view_low_stock": "View Low Stock",
+      "view_products": "View Products",
+      "product_form":{
+        "title_edit": "Edit Product",
+        "title_create": "Create Poduct",
+        "product_description": "Add or Update Product",
+        "sku": "Serial",
+        "name": "Name",
+        "description": "Description",
+        "currency": "Currency",
+        "price": "Price",
+        "stock": "Stock",
+        "enabled": "Enabled"
+      }
+    },
+    "order_management": {
+      "all_orders": " All Orders",
+      "total": "Total",
+      "currency": "Currency",
+      "products": "Products",
+      "status": "Status"
+    },
+    "cart_management": {
+      "all_carts": " All Carts",
+      "userId": "User Id",
+      "CartHolderName": "Cart Holder Name",
+      "items": "Items"
+    },
+    "user_request_management": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "emailAddress": "Email Address",
+      "approve_request": "Approve Request"
+    }
+  },
+  "auth": {
+    "invalid_grant": "Incorrect Email or password",
+    "account_locked": "Your account is locked",
+    "generalError": "Something went wrong, please try again",
+    "login": {
+      "username": "Username",
+      "email": "Email Address",
+      "password": "Password",
+      "login": "Login",
+      "sign_in": "Sign In",
+      "signUp": "Sign Up",
+      "no_account": "Don't have an account?",
+      "register": "Register Now"
+    }
+  },
+  "landing": {
+    "title": "Hamester Mini Ecommerce Project",
+    "description": "E-commerce is the buying and selling of goods or services over the internet. It enables customers to browse products, place orders, and make secure payments online, while businesses can manage inventory, orders, and customer relationships digitally. E-commerce makes shopping faster, more convenient, and accessible from anywhere.",
+    "home": "Home",
+    "register_title": "Register Now",
+    "register_sub_title": "Fill in the below form to get access to LAITRON.",
+    "full_name": "Full Name",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "mobile_number": "Mobile Number",
+    "confirm_password": "Confirm Password",
+    "password": "Password",
+    "email_address": "Email Address",
+    "submit": "Submit",
+    "submit_request": "Submit Request",
+    "request_success": "Request Successful!",
+    "request_success_description": "Your request has been successfully sent. \nWe will contact you shortly."
+  },
+  "home":{
+    "sidenav": {
+      "configuration": "Configuration",
+      "settings": "Settings",
+      "catalog": "Catalog",
+      "logout": "Logout"
+    }
+  },
+  "api_errors": {
+    "invalid_password": "Invalid password",
+    "invalid_user": "Invalid User",
+    "passwords_do_not_match": "Passwords don't match",
+    "username_exists": "Username already exists",
+    "password_too_weak": "Password must be min 8 character, contain one upper, lower, number and special char.  No whitespace.",
+    "message_error": "It looks like something went wrong on our end. Try again in a moment or let us know if the problem persists.",
+    "minimum_1_country": "At least one country must be selected."
+  },
+  "languages": {
+    "arabic": "Arabic",
+    "english": "English",
+    "french": "French"
+  },
+  "forms": {
+    "registrationform":{
+      "required": "Field required",
+      "format": "Invalid format",
+      "minimum_length": "Must be at least {{ minlength }} characters",
+      "maximum_length": "Must not exceed {{ maxlength }} characters",
+      "arabic_only": "Must contain only Arabic characters",
+      "email": {
+      "invalid": "Invalid email format"
+      },
+      "password": {
+        "weak": "Weak password. Use at least 8 characters, including uppercase letters, lowercase letters, numbers & symbols.",
+        "mismatch": "Passwords do not match"
+      },
+      "phone_number": {
+        "invalid_for_country": "Invalid phone number for the selected country code"
+      },
+      "maxvalue": "Must not exceed {{ max }}",
+      "emailAlreadyExists": "Email already exists"
+    }
+  }
+}

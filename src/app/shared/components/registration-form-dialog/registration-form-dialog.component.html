@@ -1,0 +1,59 @@
+<laitron-shared-dialog
+  [title]="'landing.register_title' | translate"
+  [subTitle]="'landing.register_sub_title' | translate"
+  [actionButtons]="actionButtons"
+  >
+  <div class="body">
+    <form [formGroup]="registrationForm" class="form">
+      <laitron-input-form-field
+        formControlName="firstName"
+        placeholdertext="{{'landing.first_name' | translate}}"
+        [color]="inputColor.PRIMARY13"
+        placeholderIcon="person"
+        [showValidationError]="true"
+        [withLabel]="true">
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="lastName"
+        placeholdertext="{{'landing.last_name' | translate}}"
+        [color]="inputColor.PRIMARY13"
+        placeholderIcon="person"
+        [showValidationError]="true"
+        [withLabel]="true">
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="emailAddress"
+        placeholdertext="{{'landing.email_address' | translate}}"
+        [color]="inputColor.PRIMARY13"
+        [showValidationError]="true"
+        placeholderIcon="mark_email_read"
+        [withLabel]="true"
+        (blur)="onEmailBlur()"
+        [autocomplete]="'new-password'">
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="password"
+        placeholdertext="{{'landing.password' | translate}}"
+        [isPassword]="true"
+        [color]="inputColor.PRIMARY13"
+        [showValidationError]="true"
+        [mode]="inputMode.LIGHT"
+        placeholderIcon="password"
+        [withLabel]="true"
+        [autocomplete]="'new-password'">
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="confirmPassword"
+        placeholdertext="{{'landing.confirm_password' | translate}}"
+        [isPassword]="true"
+        [color]="inputColor.PRIMARY13"
+        [showValidationError]="true"
+        [mode]="inputMode.LIGHT"
+        placeholderIcon="password"
+        [withLabel]="true"
+        [autocomplete]="'new-password'">
+      </laitron-input-form-field>
+    </form>
+  </div>
+
+</laitron-shared-dialog>

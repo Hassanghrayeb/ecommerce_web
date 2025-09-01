@@ -1,0 +1,41 @@
+<ng-container  *ngIf="collapsed; else expanded">
+    <div class="dropdown-container collapsed" >
+      <ul class="list-items">
+        <li class="nav_element selected">
+          <div class="item-details">
+            <span class="material-symbols-outlined">{{selectedNavItem.icon}}</span>
+            <span class="nav_element_label">
+              {{ selectedNavItem.label | translate }}
+            </span>
+          </div>
+          <button class="btn-style" (click)="expandCollapse()">
+            <mat-icon>keyboard_arrow_down</mat-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+  
+  <ng-template #expanded>
+    <div class="dropdown-container expanded">
+      <ul class="list-items">
+        <li
+          *ngFor="let item of displayedNavItems; let i = index"
+          class="nav_element"
+          [ngClass]="{ selected: selectedNavRoute === item.routerLink  }"
+          (click)="selectNavItem(item)"
+        >
+        <div class="item-details">
+          <span class="material-symbols-outlined">{{item.icon}}</span>
+          <span class="nav_element_label">
+            {{ item.label | translate }}
+          </span>
+        </div>
+          <button class="btn-style" *ngIf="i === 0" (click)="expandCollapse()">
+            <mat-icon>keyboard_arrow_up</mat-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </ng-template>
+  

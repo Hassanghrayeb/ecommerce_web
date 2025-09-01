@@ -1,0 +1,49 @@
+@import "src/assets/global-styles/mixins/mixins"
+.intro
+  position: relative
+  height: 100vh
+  width: 100vw
+  img
+    height: 100vh
+    width: 100vw
+    filter: brightness(65%)
+    object-fit: cover
+  .overlay-text
+    max-width: 50%
+    position: absolute
+    top: 20%
+    left: 7%
+    display: block
+    @include media-breakpoint('lt-md')
+      max-width: 90%
+    .action_btn
+      display: flex
+      flex-direction: row
+      gap: 10px
+      padding-top: 10px
+      padding-bottom: 10px
+      width: 20%
+      laitron-button
+        flex: 1
+      @include media-breakpoint('lt-md')
+        max-width: 90%
+        flex-wrap: wrap
+    h1
+      font-size: 38px
+      color: white
+      font-weight: bold
+      max-width: 90%
+      @include media-breakpoint('lt-sm')
+        font-size: 36px
+    p
+      font-size: 16px
+      color: white
+      font-weight: 400
+      @include media-breakpoint('lt-sm')
+        font-size: 14px
+
+  .overlay-text-rtl
+    left: 0
+    right: 7%
+  .img-rtl
+    transform: scale(-1,1)

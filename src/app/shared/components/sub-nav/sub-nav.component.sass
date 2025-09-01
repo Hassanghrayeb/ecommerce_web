@@ -1,0 +1,30 @@
+.side-nav
+  .search_form
+    padding-top: 15px
+  ul
+    list-style: none
+    padding: 0
+    gap: 10px
+    display: flex
+    flex-direction: column
+    .nav_element
+      display: flex
+      align-items: center
+      padding: 15px
+      height: 24px
+      cursor: pointer
+      transition: background-color 0.3s
+      gap: 10px
+      .nav_element_label
+        font-size: 15px
+        color: var(--text-primary-color-1)
+      &.selected
+        border: 1px solid var(--text-primary-color-3)
+        border-radius: 10px
+        .nav_element_label
+          color: var(--text-primary-color-3)
+        .icon
+          color: var(--text-primary-color-3)
+      &:hover
+        background-color: var(--primary-color-1-1)
+        border-radius: 10px

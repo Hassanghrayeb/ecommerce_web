@@ -1,0 +1,118 @@
+.input_textarea_field
+  width: 100%
+  display: flex
+  flex-direction: column
+
+  .input_textarea_field_label
+    margin-bottom: 10px
+    font-size: 14px
+    color: var(--text-primary-color-1)
+    display: flex
+    align-items: center
+    gap: 10px
+    &.empty
+      color: white
+      .icon
+        filter: brightness(0) invert(1)
+
+  &.secondary24
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-4)
+
+  &.primary20
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--primary-color-2-0)
+      .mat-mdc-form-field-flex
+        .mat-mdc-form-field-infix
+          .mat-mdc-input-element
+            color: var(--text-neutral-color-2) !important
+    .input_textarea::placeholder
+      color: var(--text-neutral-color-2)
+  &.primary12
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--primary-color-1-2)
+  &.primary13
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--primary-color-1-3)
+      mat-mdc-form-field-flex
+        .mat-mdc-form-field-infix
+          .mat-mdc-input-element
+            color: var(--text-neutral-color-2) !important
+    .input_textarea::placeholder
+      color: var(--text-primary-color-1)
+
+  &.secondary22
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-2)
+  &.secondary23
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-3)
+
+  &.secondary25
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-5)
+
+  &.secondary15
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-1-5)
+
+  .input_textarea
+    padding : 0 5px 10px 10px
+    border: none
+    font-size: 14px
+    font-family: goli-regular
+    overflow: auto
+    scrollbar-width: none
+    -ms-overflow-style: none
+    &::-webkit-scrollbar
+      display: none
+    &::placeholder
+      color: var(--text-neutral-color-2)
+
+  ::ng-deep
+    .mat-mdc-text-field-wrapper
+      padding: 0 !important
+      border-radius: inherit !important
+      .mat-mdc-form-field-flex
+        border-radius: inherit !important
+        .mat-mdc-form-field-infix
+          place-content: center
+          border-radius: inherit !important
+          .mat-mdc-input-element
+            color: var(--text-primary-color-1) !important
+            border-radius: inherit !important
+        .mat-mdc-form-field-icon-suffix
+          padding: 0 4px
+          border-radius: inherit !important
+
+    .mdc-text-field__input
+      color: var(--text-primary-color-1) !important
+      border-radius: inherit !important
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch
+      border-radius: inherit !important
+      border-color: transparent !important
+    .mat-mdc-form-field-icon-prefix
+      width: 35px
+      padding: 0
+
+  &.rectangle
+    .input_textarea
+      border-radius: 10px
+    ::ng-deep .mdc-text-field
+      border-radius: 10px !important
+      padding: 0 !important
+
+  &.round
+    .input_textarea
+      border-radius: 45px
+    ::ng-deep .mdc-text-field
+      border-radius: 45px !important
+      padding: 0 !important
+
+  ::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-notched-outline
+    border-color: transparent !important
+
+.input_textarea:focus
+  caret-color: var(--primary-neutral-color-1) !important

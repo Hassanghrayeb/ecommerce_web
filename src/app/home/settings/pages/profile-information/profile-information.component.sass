@@ -1,0 +1,47 @@
+@import 'src/assets/global-styles/placeholders/placeholders'
+
+.content_box
+    border-radius: 15px
+    padding: 20px
+    border: 1px solid var(--primary-color-1-2)
+    .title
+        display: flex
+        flex-direction: column
+        gap: 5px
+        .title_label
+            font-size: 15px
+            font-weight: 700
+            color: var(--text-primary-color-1)
+        .title_desc
+            font-size: 14px
+            font-weight: 400
+            color: var(--text-secondary-color-1)
+
+.profile_info_wrapper
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+
+.profile_info_form
+  @extend %flexRowWrap
+  column-gap: 30px
+  .form_input
+    width: calc(50% - 15px)
+  .action_btn
+    margin: auto 0 21.6px auto
+  .disable
+    opacity: 50%
+.password_form
+  @extend %flexRowWrap
+  column-gap: 30px
+  align-items: center
+  laitron-input-form-field
+    flex: 1
+  laitron-button
+    margin-top: 7px
+  .form_input
+    width: calc(50% - 15px)
+.account_security_actions
+  @extend %flexRowWrap
+  gap: 20px

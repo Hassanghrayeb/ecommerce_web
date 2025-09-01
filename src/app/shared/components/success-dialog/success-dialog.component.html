@@ -1,0 +1,19 @@
+<div class="success_dialog">
+  <div class="body">
+    <img *ngIf="data.successIcon" [src]="data.successIcon">
+    <span *ngIf="data.title" class="title">{{ data.title | translate :data.titleParams }}</span>
+    <span *ngIf="data.description" class="description"
+          [ngClass]="{'rtl-direction': direction === 'rtl' }">{{ data.description | translate: data.descriptionParams }}</span>
+    <span *ngIf="data.note" class="note">{{ data.note | translate: data.descriptionParams }}</span>
+  </div>
+  <div class="actions">
+    <laitron-button
+      *ngFor="let button of data.buttons"
+      [buttonText]="button.label | translate"
+      [color]="button.color"
+      [shape]="button.shape"
+      [mode]="button.mode"
+      (buttonClick)="button.action ? button.action(0) : closeDialog()"
+    ></laitron-button>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<laitron-shared-dialog
+  [title]="data && data.id ? 'configuration_module.product_management.product_form.title_edit' : 'configuration_module.product_management.product_form.title_create' | translate"
+  [subTitle]="'configuration_module.product_management.product_form.product_description' | translate" [actionButtons]="actionButtons">
+  <form [formGroup]="productForm" class="body">
+    <div class="section">
+        <laitron-input-form-field formControlName="sku" [color]="inputColor.PRIMARY11" [withLabel]="true"
+                                  placeholdertext="{{'configuration_module.product_management.product_form.sku' | translate}}"
+                                  [showValidationError]="true">
+        </laitron-input-form-field>
+        <laitron-input-form-field formControlName="name" [color]="inputColor.PRIMARY11" [withLabel]="true"
+                                  [showValidationError]="true"
+                                  placeholdertext="{{'configuration_module.product_management.product_form.name' | translate}}">
+        </laitron-input-form-field>
+    </div>
+
+        <div class="section">
+        <laitron-input-form-field formControlName="description" [color]="inputColor.PRIMARY11" [withLabel]="true"
+                                  placeholdertext="{{'configuration_module.product_management.product_form.description' | translate}}"
+                                  [showValidationError]="true">
+        </laitron-input-form-field>
+        <laitron-input-form-field formControlName="currency" [color]="inputColor.PRIMARY11" [withLabel]="true"
+                                  [showValidationError]="true"
+                                  placeholdertext="{{'configuration_module.product_management.product_form.currency' | translate}}">
+        </laitron-input-form-field>
+    </div>
+
+        <div class="section">
+        <laitron-input-form-field formControlName="price" [color]="inputColor.PRIMARY11" [withLabel]="true"
+                                  placeholdertext="{{'configuration_module.product_management.product_form.price' | translate}}"
+                                  [showValidationError]="true">
+        </laitron-input-form-field>
+        <laitron-input-form-field formControlName="stock" [color]="inputColor.PRIMARY11" [withLabel]="true"
+                                  [showValidationError]="true"
+                                  placeholdertext="{{'configuration_module.product_management.product_form.stock' | translate}}">
+        </laitron-input-form-field>
+    </div>
+    <div class="section">
+      <div class="checkbox_field" [class.disabled]="productForm.controls.enabled.disabled">
+        <mat-checkbox color="primary" formControlName="enabled">Enabled</mat-checkbox>
+      </div>
+    </div>
+  </form>
+</laitron-shared-dialog>

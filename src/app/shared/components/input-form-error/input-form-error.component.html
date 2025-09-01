@@ -1,0 +1,12 @@
+<div *ngIf="control?.invalid && control?.touched" class="error">
+    <span *ngIf="control?.errors?.required">{{ 'forms.registrationform.required' | translate }}</span>
+    <span *ngIf="control?.errors?.minlength">{{ 'forms.registrationform.minimum_length' | translate: { minlength: control?.errors?.minlength.requiredLength } }}</span>
+    <span *ngIf="control?.errors?.invalidEmail">{{ 'forms.registrationform.email.invalid' | translate }}</span>
+    <span *ngIf="control?.errors?.pattern">{{ 'forms.registrationform.format' | translate }}</span>
+    <span *ngIf="control?.errors?.weakPassword">{{ 'forms.registrationform.password.weak' | translate }}</span>
+    <span *ngIf="control?.errors?.passwordsDoNotMatch">{{ 'forms.registrationform.password.mismatch' | translate }}</span>
+    <span *ngIf="control?.errors?.maxValueError">{{ 'forms.registrationform.maxvalue' | translate: { max: control?.errors?.requiredMaxValue } }}</span>
+    <span *ngIf="control?.errors?.emailAlreadyExists">{{ 'forms.registrationform.emailAlreadyExists' | translate }}</span>
+    <span *ngIf="control?.errors?.maxlength">{{ 'forms.registrationform.minimum_length' | translate: { maxlength: control?.errors?.maxlength.requiredLength } }}</span>
+    <span *ngIf="control?.errors?.arabicOnly">{{ 'forms.registrationform.arabic_only' | translate }}</span>
+  </div>

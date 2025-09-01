@@ -1,0 +1,15 @@
+<div class="intro">
+  <img src="assets/icons/landing/intro-image.webp" [ngClass]="{'img-rtl': direction === 'rtl'}">
+  <div class="overlay-text"  [ngClass]="{'overlay-text-rtl': direction === 'rtl'}">
+    <h1>{{ 'landing.title'|translate }}</h1>
+    <p>{{ 'landing.description'|translate }}</p>
+    <div class="action_btn">
+      <laitron-button [iconDirection]="'right'"
+                     [buttonIcon]="direction === 'rtl' ? 'north_west' : 'north_east'"
+                     [shape]="inputShape.PRIMARY"
+                     [color]="inputColor.LANDING_PRIMARY_23"
+                     [buttonText]="'landing.register_title' | translate"
+                     (buttonClick)="openRegistrationDialog()"></laitron-button>
+    </div>
+  </div>
+</div>

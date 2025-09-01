@@ -1,0 +1,23 @@
+<laitron-shared-dialog
+  [title]="data && data.id ? 'settings_module.role_management.role_form.title_edit' : 'settings_module.role_management.role_form.title_create' | translate"
+  [subTitle]="'settings_module.role_management.role_form.role_description' | translate" [actionButtons]="actionButtons">
+  <form [formGroup]="roleForm" class="body">
+    <div class="section">
+
+      <laitron-input-form-field formControlName="name" [color]="inputColor.PRIMARY11"
+        placeholdertext="{{'settings_module.role_management.role_form.name' | translate}}">
+      </laitron-input-form-field>
+      <laitron-input-form-field formControlName="description" [color]="inputColor.PRIMARY11"
+        placeholdertext="{{'settings_module.role_management.role_form.description' | translate}}">
+      </laitron-input-form-field>
+    </div>
+  </form>
+  <form [formGroup]="permissionsForm" class="body">
+    <laitron-dropdown formControlName="permissions" [color]="inputColor.PRIMARY11"
+                     [textSize]="textSize.SMALL"
+                     [dropdownOptions]="permissionsLookup"
+                     placeholdertext="{{'settings_module.role_management.role_form.permissions' | translate}}"
+                     [isMultiple]="true">
+    </laitron-dropdown>
+  </form>
+</laitron-shared-dialog>

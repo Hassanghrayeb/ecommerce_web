@@ -1,0 +1,15 @@
+<div class="dialog-container">
+  <p class="confirmation_message">{{ data.confirmationMessage | translate }}</p>
+  <div class="actions">
+    <laitron-button
+      [buttonText]="'general.cancel' | translate"
+      [color]="inputColor.TRANSPARENT1"
+      [shape]="inputShape.PRIMARY"
+      (buttonClick)="onCancel()"></laitron-button>
+    <laitron-button
+      [buttonText]="data.confirmationButton | translate"
+      [color]="inputColor.PRIMARY23"
+      [shape]="inputShape.PRIMARY"
+      (buttonClick)="onConfirm()"></laitron-button>
+  </div>
+</div>

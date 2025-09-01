@@ -1,0 +1,223 @@
+@import 'src/assets/global-styles/abstracts/colors'
+
+\:host
+    display: block
+    // background-color: #fff
+    overflow: auto
+    content-visibility: auto
+    min-height: 135px
+
+.table-wrapper
+    width: 100%
+    .filter_field
+        width: 100%
+        .filter_actions
+            display: flex
+            .filter_action
+                cursor: pointer
+                width: 35px
+                text-align: left
+    .record-row
+        display: flex
+        align-items: center
+        padding: 5px
+        .record-cell
+            padding: 5px
+            word-break: break-word
+            color: var(--text-primary-color-1)
+            min-width: 75px
+            // .date-cell
+            //     text-align: center
+            .edit-action-cell
+                display: inline-flex
+                padding: 6px
+                border-radius: 50%
+            .delete-action-cell
+                display: inline-flex
+                padding: 6px
+                border-radius: 50%
+                mat-icon
+                    color: var(--text-primary-color-3)
+            .permission-action-cell
+                background: #e0ba6e4D
+                display: inline-flex
+                padding: 6px
+                border-radius: 50%
+                mat-icon
+                    color: #e0ba6e
+            .send-action-cell
+                background: #e0ba6e4D
+                display: inline-flex
+                padding: 6px
+                border-radius: 50%
+                mat-icon
+                    color: #e0ba6e
+            .action-cell
+                text-align: center
+            .actionicon
+                cursor: pointer
+            .list_cell
+                display: flex
+                flex-wrap: wrap
+                gap: 10px
+                .list_elem
+                    border-radius: 8px
+                    padding: 10px
+                    text-transform: lowercase
+                    font-weight: 600
+                    &.black
+                        color: var(--text-primary-color-1)
+                        background-color: var(--primary-color-1-2)
+                    &.primary20
+                        border: 1px solid var(--primary-color-2-0)
+                        color: var(--text-primary-color-1)
+                        background-color: var(--primary-color-6-lighten)
+                    &.red
+                        color: var(--text-primary-color-1)
+                        background-color: var(--primary-color-2-4)
+                    &.white
+                      border: none
+                      color: var(--primary-color-2-0)
+                      background-color: var(--white)
+            .array-list
+                margin: 0
+                padding-left: 20px
+                list-style-type: disc
+                display: flex
+                flex-direction: column
+    .record-header-row
+        border-radius: 10px
+        margin: 10px 0
+        padding: 10px
+        min-width: fit-content
+        &.secondary15
+          background-color: var(--secondary-color-1-5)
+        &.primary11
+          background-color: var(--primary-color-1-1)
+          color: var(--text-primary-color-1)
+        &.secondary25
+          background-color: var(--secondary-color-2-5)
+        .record-header
+            font-size: small
+            font-weight: 500
+    .record-data-row
+        color: var(--primary-color-1-0)
+        border-radius: 10px
+        margin: 10px 0px
+        min-width: fit-content
+        border: 1px solid var(--primary-color-1-2)
+        &.highlighted
+            color: var(--primary-color-2) // TODO change color
+            font-weight: 500
+
+    .record-expand-row
+        display: inline-flex
+        background-color: white
+        border-radius: 10px
+        width: 88vw
+        overflow: auto
+        margin: 5px 15px 20px 15px
+        gap: 15px
+
+.toggle-cell
+    height: 100%
+    display: flex
+    .mat-slide-toggle
+        align-self: center
+
+.paginator
+    display: flex
+    float: right
+    color: var(--text-primary-color-1)
+    .navigation_icon
+        font-size: 30px
+        cursor: pointer
+        margin: 0px 5px
+        color: var(--primary-color-1-3)
+        &.isDisabled
+            color: var(--primary-color-1-1)
+            cursor: initial
+    .navigation_nb
+        line-height: 30px
+        margin: 0px 5px
+
+::ng-deep
+    .mdc-checkbox__background
+      border: 2px solid var(--text-primary-color-1) !important
+    .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background
+      background-color: var(--primary-neutral-color-1) !important
+    .mdc-checkbox__native-control:checked~.mdc-checkbox__background .mdc-checkbox__checkmark
+      color: var(--primary-color-1-1)
+    .confirm-dialog
+        .mat-dialog-container
+            width: 100% !important
+            max-height: 75vh !important
+            padding: 20px !important
+    .details-dialog
+        max-height: 90%
+        .mat-dialog-container
+            padding: 0px !important
+            border-radius: 15px !important
+            height: auto
+.btnStyleYellow
+    background: #959c244d
+    display: inline-flex
+    padding: 6px
+    border-radius: 50%
+    mat-icon
+        color: #8f8d0e
+
+.subText
+    color: var(--text-primary-color-1)
+    font-size: 12px
+
+.name-desc-cell
+  display: flex
+  flex-direction: column
+  padding: 5px 5px
+  gap: 5px
+  .recommended-chip
+    padding: 4px 8px
+    gap: 10px
+    background-color: var(--primary-color-1-5)
+    color: var(--text-primary-color-1)
+    font-weight: 600
+    font-size: 12px
+    width: fit-content
+
+
+
+::ng-deep
+  .mdc-switch
+    width: 61px !important
+
+  .mdc-switch__track
+    height: 30px !important
+    border-radius: 45px !important
+
+    &::after,
+    &::before
+      background: var(--primary-color-1-3) !important
+
+    &::before
+      border: 1px solid var(--primary-color-1-2) !important
+
+  .mdc-switch--selected
+    .mdc-switch__handle::after
+      background: var(--primary-neutral-color-1) !important
+
+    .mdc-switch__handle-track
+      transform: translateX(90%) !important
+
+    &:disabled .mdc-switch__handle::before
+      background: var(--primary-color-1-1) !important
+
+    .mdc-switch__icon
+      display: none
+
+  .mdc-switch--unselected
+    .mdc-switch__handle-track
+      transform: translateX(10%) !important
+
+    .mdc-switch__icon
+      display: none

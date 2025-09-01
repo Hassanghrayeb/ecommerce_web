@@ -1,0 +1,22 @@
+<div class="input_field" *ngIf="ngControl?.control" [ngClass]="[color,shape]">
+  <mat-label class="input_field_label" *ngIf="withLabel" [ngClass]="mode">
+    <span class="material-symbols-outlined" *ngIf="placeholderIcon">{{placeholderIcon}}</span>
+    {{ fieldLabel ? fieldLabel : placeholdertext | translate }} </mat-label>
+  <mat-form-field color="primary" appearance="outline">
+
+    <mat-icon class="prefix-icon" matPrefix *ngIf="prefix">{{prefix}}</mat-icon>
+
+    <input matInput [disabled]="true" [autocomplete]="autocomplete" [type]="stepValue ? 'number' : (isPassword && hidePassword ) ?  'password' : 'text'"
+      [attr.step]="stepValue" [maxlength]="maxLength" [formControl]="formControl" placeholder="{{ placeholdertext | translate }}" class="ai_input" (blur)="blur.emit($event)"/> 
+
+    <button type="button" *ngIf="isPassword" matSuffix mat-icon-button
+      (click)="togglePasswordVisibility()" [attr.aria-label]="hidePassword ? 'Show password' : 'Hide password'">
+      <mat-icon class="text_fourth_color_4 icon">{{ hidePassword ? "visibility" : "visibility_off" }}</mat-icon>
+    </button>
+
+    <span *ngIf="trailingIcon" matSuffix class="material-symbols-outlined icon">{{trailingIcon}}</span>
+    
+  </mat-form-field>
+
+  <laitron-input-form-error *ngIf="showValidationError" [control]="ngControl.control"></laitron-input-form-error>
+</div>

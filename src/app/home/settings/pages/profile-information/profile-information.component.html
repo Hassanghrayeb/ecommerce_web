@@ -1,0 +1,86 @@
+<div class="profile_info_wrapper" *ngIf="!isLoading">
+  <laitron-section-box
+    [button]="saveProfileInformationButton"
+    [title]="'settings_module.profile_info.profile_info'"
+    [description]="'settings_module.profile_info.profile_info_hint'"
+  >
+    <form [formGroup]="profileInfoForm" class="profile_info_form">
+      <laitron-input-form-field
+        formControlName="firstName"
+        class="form_input"
+        placeholdertext="{{
+          'settings_module.profile_info.first_name' | translate
+        }}"
+        [color]="inputColor.PRIMARY13"
+        [withLabel]="true"
+        [isDisabled]="true"
+      >
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="lastName"
+        class="form_input"
+        placeholdertext="{{
+          'settings_module.profile_info.last_name' | translate
+        }}"
+        [color]="inputColor.PRIMARY13"
+        [withLabel]="true"
+      >
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="username"
+        class="form_input disable"
+        placeholdertext="{{
+          'settings_module.profile_info.username' | translate
+        }}"
+        [color]="inputColor.PRIMARY13"
+        [withLabel]="true"
+      >
+      </laitron-input-form-field>
+      <laitron-input-form-field
+        formControlName="email"
+        class="form_input disable"
+        placeholdertext="{{ 'settings_module.profile_info.email' | translate }}"
+        [color]="inputColor.PRIMARY13"
+        [withLabel]="true"
+      >
+      </laitron-input-form-field>
+    </form>
+  </laitron-section-box>
+
+  <!-- <laitron-section-box
+    [title]="'settings_module.profile_info.password'"
+    [description]="'settings_module.profile_info.password_hint'"
+  >
+    <form [formGroup]="passwordForm" class="password_form">
+      <laitron-input-form-field
+        formControlName="currentPassword"
+        class="form_input"
+        placeholdertext="{{
+          'settings_module.profile_info.current_pass' | translate
+        }}"
+        [color]="inputColor.PRIMARY13"
+        [withLabel]="true"
+        [isPassword]="true"
+      >
+      </laitron-input-form-field>
+    </form>
+  </laitron-section-box> -->
+
+  <!-- <laitron-section-box
+    [title]="'settings_module.profile_info.account_security'"
+    [description]="'settings_module.profile_info.account_security_hint'"
+  >
+    <div class="account_security_actions">
+      <laitron-button
+        [buttonText]="'settings_module.profile_info.logout' | translate"
+        [color]="inputColor.PRIMARY11"
+        [shape]="inputShape.PRIMARY"
+        [mode]="inputMode.LIGHT"
+        (buttonClick)="onLogout()"
+        [buttonIcon]="'logout'"
+        iconDirection="left"
+        class="action_btn"
+      ></laitron-button>
+    </div>
+  </laitron-section-box> -->
+</div>

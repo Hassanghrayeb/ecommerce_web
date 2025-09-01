@@ -1,0 +1,23 @@
+@import "src/assets/global-styles/base/base"
+@import "src/assets/global-styles/abstracts/colors"
+
+.empty_chat
+    @include flex-center
+    width: calc(100% - 100px)
+    height: calc(100% - 40px)
+    flex-direction: column
+    padding: 20px 50px
+    gap: 10px
+    border-radius: 10px
+    p
+        margin: 0
+        &.empty_1
+            font-weight: 600
+            font-size: 20px
+            color: var(--text-neutral-color-2)
+            padding-top: 10px
+    .empty_content
+      @include flex-center
+      padding: 20px
+      width: 100%
+

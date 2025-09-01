@@ -1,0 +1,205 @@
+// Dark
+$dark-primary-color-1-0: #231F20
+$dark-primary-color-1-1: #353233
+$dark-primary-color-1-2: #494546
+$dark-primary-color-1-3: #5D5A5B
+$dark-primary-color-1-4: #737070
+$dark-primary-color-1-5: #888687
+$dark-primary-color-2-0: #892232
+$dark-primary-color-2-3: #B1666A
+$dark-primary-color-2-4: #BD7C7E
+$dark-primary-neutral-color-1: #FFFFFF
+
+$dark-other-color-1: #EB1839
+$dark-other-color-2: #616163
+
+$dark-text-primary-color-1: #FFFFFF
+$dark-text-primary-color-2: #231F20
+$dark-text-primary-color-3: #E0BCBD
+$dark-text-secondary-color-1: #C8C8C8
+$dark-text-tertiary-color-1: #EB1839
+
+$dark-links-primary: #467FDF
+$dark-links-primary-2: #4C63B8
+
+$dark-button-primary-1-0: #231F20
+$dark-button-primary-1-0-hover: #494546
+$dark-button-primary-2-0: #892232
+$dark-button-primary-2-0-hover: #B1666A
+$dark-button-transparent-1: transparent
+$dark-button-transparent-1-hover: #FFFFFF
+$dark-button-transparent-2: transparent
+$dark-button-transparent-2-hover: #D0D0D2
+$dark-button-secondary-2-5: #F7F7F7
+$dark-button-secondary-2-5-hover: #EB1839
+
+$dark-highlight-color: #892232
+
+
+// Light
+$light-primary-color-1-0: #FFFFFF
+$light-primary-color-1-1: #F1F1F1
+$light-primary-color-1-2: #E6E6E6
+$light-primary-color-1-3: #DDDDDD
+$light-primary-color-1-4: #BDBDBD
+$light-primary-color-1-5: #999999
+$light-primary-color-2-0: #E0BCBD
+$light-primary-color-2-3: #BD7C7E
+$light-primary-color-2-4: #A45157
+$light-primary-neutral-color-1: #231F20
+
+$light-text-primary-color-1: #231F20
+$light-text-primary-color-2: #FFFFFF
+$light-text-primary-color-3: #892232
+$light-text-secondary-color-1: #565555
+$light-text-tertiary-color-1: #EB1839
+
+$light-links-primary: #467FDF
+$light-links-primary-2: #4C63B8
+
+$light-other-color-1: #EB1839
+$light-other-color-2: #616163
+
+$light-button-primary-1-0: #231F20
+$light-button-primary-1-0-hover: #494546
+$light-button-primary-2-0: #892232
+$light-button-primary-2-0-hover: #B1666A
+$light-button-transparent-1: transparent
+$light-button-transparent-1-hover: #231F20
+$light-button-transparent-2: transparent
+$light-button-transparent-2-hover: #A5A5A7
+$light-button-secondary-2-5: #F7F7F7
+$light-button-secondary-2-5-hover: #EB1839
+
+$light-highlight-color: #E0BCBD
+
+
+// Landing Colors
+$landing-primary-color-1-0: #231F20
+$landing-primary-color-1-1: #353233
+$landing-primary-color-1-2: #494546
+$landing-primary-color-1-3: #5D5A5B
+$landing-primary-color-1-4: #737070
+$landing-primary-color-2-0: #892232
+$landing-primary-color-2-2: #A45157
+$landing-primary-2-6: #E0BCBD
+$landing-text-neutral-1: #C8C8C8
+$landing-text-primary-2: #892232
+$landing-secondary-2-3: #E7E7E8
+$landing-secondary-2-2: #DFE0E1
+$landing-primary-color-2-3: #B1666A
+$landing-primary-color-2-4: #BD7C7E
+
+$white: #FFFFFF
+
+@mixin dark-mode
+  --primary-color-1-0: #{$dark-primary-color-1-0}
+  --primary-color-1-1: #{$dark-primary-color-1-1}
+  --primary-color-1-2: #{$dark-primary-color-1-2}
+  --primary-color-1-3: #{$dark-primary-color-1-3}
+  --primary-color-1-4: #{$dark-primary-color-1-4}
+  --primary-color-1-5: #{$dark-primary-color-1-5}
+  --primary-color-2-0: #{$dark-primary-color-2-0}
+  --primary-color-2-3: #{$dark-primary-color-2-3}
+  --primary-color-2-4: #{$dark-primary-color-2-4}
+
+  --primary-neutral-color-1: #{$dark-primary-neutral-color-1}
+
+  --other-color-1: #{$dark-other-color-1}
+  --other-color-2: #{$dark-other-color-2}
+
+  --landing-primary-color-1-0: #{$landing-primary-color-1-0}
+  --landing-primary-color-1-1: #{$landing-primary-color-1-1}
+  --landing-primary-color-1-2: #{$landing-primary-color-1-2}
+  --landing-primary-color-1-3: #{$landing-primary-color-1-3}
+  --landing-primary-color-1-4: #{$landing-primary-color-1-4}
+  --landing-primary-color-2-0: #{$landing-primary-color-2-0}
+  --landing-primary-color-2-2: #{$landing-primary-color-2-2}
+  --landing-primary-color-2-3: #{$landing-primary-color-2-3}
+  --landing-primary-color-2-4: #{$landing-primary-color-2-4}
+  --landing-primary-2-6: #{$landing-primary-2-6}
+  --landing-text-neutral-1: #{$landing-text-neutral-1}
+  --landing-text-primary-2: #{$landing-text-primary-2}
+  --landing-secondary-2-3: #{$landing-secondary-2-3}
+  --landing-secondary-2-2: #{$landing-secondary-2-2}
+
+  --text-primary-color-1: #{$dark-text-primary-color-1}
+  --text-primary-color-2: #{$dark-text-primary-color-2}
+  --text-primary-color-3: #{$dark-text-primary-color-3}
+  --text-secondary-color-1: #{$dark-text-secondary-color-1}
+  --text-tertiary-color-1: #{$dark-text-tertiary-color-1}
+
+  --links-primary: #{$dark-links-primary}
+  --links-primary-2: #{$dark-links-primary-2}
+
+  --button-primary-1-0: #{$dark-button-primary-1-0}
+  --button-primary-1-0-hover: #{$dark-button-primary-1-0-hover}
+  --button-primary-2-0: #{$dark-button-primary-2-0}
+  --button-primary-2-0-hover: #{$dark-button-primary-2-0-hover}
+  --button-transparent-1: #{$dark-button-transparent-1}
+  --button-transparent-1-hover: #{$dark-button-transparent-1-hover}
+  --button-transparent-2: #{$dark-button-transparent-2}
+  --button-transparent-2-hover: #{$dark-button-transparent-2-hover}
+  --button-secondary-2-5: #{$dark-button-secondary-2-5}
+  --button-secondary-2-5-hover: #{$dark-button-secondary-2-5-hover}
+
+  --white: #{$white}
+
+  --reference-highlight-color: #{$dark-highlight-color}
+
+
+@mixin light-mode
+  --primary-color-1-0: #{$light-primary-color-1-0}
+  --primary-color-1-1: #{$light-primary-color-1-1}
+  --primary-color-1-2: #{$light-primary-color-1-2}
+  --primary-color-1-3: #{$light-primary-color-1-3}
+  --primary-color-1-4: #{$light-primary-color-1-4}
+  --primary-color-1-5: #{$light-primary-color-1-5}
+  --primary-color-2-0: #{$light-primary-color-2-0}
+  --primary-color-2-3: #{$light-primary-color-2-3}
+  --primary-color-2-4: #{$light-primary-color-2-4}
+
+  --primary-neutral-color-1: #{$light-primary-neutral-color-1}
+
+  --text-primary-color-1: #{$light-text-primary-color-1}
+  --text-primary-color-2: #{$light-text-primary-color-2}
+  --text-primary-color-3: #{$light-text-primary-color-3}
+
+  --text-secondary-color-1: #{$light-text-secondary-color-1}
+  --text-tertiary-color-1: #{$light-text-tertiary-color-1}
+
+  --links-primary: #{$light-links-primary}
+  --links-primary-2: #{$light-links-primary-2}
+
+  --other-color-2: #{$light-other-color-2}
+  --other-color-1: #{$light-other-color-1}
+
+  --button-primary-1-0: #{$light-button-primary-1-0}
+  --button-primary-1-0-hover: #{$light-button-primary-1-0-hover}
+  --button-primary-2-0: #{$light-button-primary-2-0}
+  --button-primary-2-0-hover: #{$light-button-primary-2-0-hover}
+  --button-transparent-1: #{$light-button-transparent-1}
+  --button-transparent-1-hover: #{$light-button-transparent-1-hover}
+  --button-transparent-2: #{$light-button-transparent-2}
+  --button-transparent-2-hover: #{$light-button-transparent-2-hover}
+  --button-secondary-2-5: #{$light-button-secondary-2-5}
+  --button-secondary-2-5-hover: #{$light-button-secondary-2-5-hover}
+
+  --landing-primary-color-1-0: #{$landing-primary-color-1-0}
+  --landing-primary-color-1-1: #{$landing-primary-color-1-1}
+  --landing-primary-color-1-2: #{$landing-primary-color-1-2}
+  --landing-primary-color-1-3: #{$landing-primary-color-1-3}
+  --landing-primary-color-1-4: #{$landing-primary-color-1-4}
+  --landing-primary-color-2-0: #{$landing-primary-color-2-0}
+  --landing-primary-color-2-2: #{$landing-primary-color-2-2}
+  --landing-primary-color-2-3: #{$landing-primary-color-2-3}
+  --landing-primary-color-2-4: #{$landing-primary-color-2-4}
+  --landing-primary-2-6: #{$landing-primary-2-6}
+  --landing-text-neutral-1: #{$landing-text-neutral-1}
+  --landing-text-primary-2: #{$landing-text-primary-2}
+  --landing-secondary-2-3: #{$landing-secondary-2-3}
+  --landing-secondary-2-2: #{$landing-secondary-2-2}
+
+  --reference-highlight-color: #{$light-highlight-color}
+
+  --white: #{$white}

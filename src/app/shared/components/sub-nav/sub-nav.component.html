@@ -1,0 +1,20 @@
+<div class="side-nav">
+  <ul>
+    <li
+      *ngFor="let item of displayedNavItems; let i = index"
+      [ngClass]="{
+        selected: selectedNavRoute === item.routerLink,
+        disabled: item.isDisabled
+      }"
+      class="nav_element"
+      (click)="!item.isDisabled && selectNavItem(item)"
+      [matTooltip]="item.alt! | translate"
+    >
+      <span class="material-symbols-outlined icon">{{item.icon}}</span>
+
+      <span class="nav_element_label">
+        {{ item.label | translate }}
+      </span>
+    </li>
+  </ul>
+</div>

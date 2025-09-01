@@ -1,0 +1,13 @@
+<mat-radio-group
+  [formControl]="formControl"
+  (change)="onSelectionChange($event.value)"
+  color="primary"
+  class="radio_group"
+  [ngClass]="[color, shape]"
+>
+  <div *ngFor="let option of options" class="radio_option">
+    <mat-radio-button [value]="option.value">{{
+      option.label | translate
+    }}</mat-radio-button>
+  </div>
+</mat-radio-group>

@@ -1,0 +1,37 @@
+.row
+  display: grid
+  grid-template-columns: 1fr auto auto auto
+  gap: .5rem
+  align-items: center
+  color: #374151
+
+.meta
+  display: grid
+  color: #1f2937
+
+.qty
+  display: flex
+  align-items: center
+  gap: .5rem
+
+  button
+    width: 2rem
+    height: 2rem
+    border-radius: .5rem
+    border: 1px solid #d1d5db
+    background: #f9fafb
+    cursor: pointer
+
+    &:hover
+      background: #e5e7eb
+
+.remove
+  border: 0
+  background: transparent
+  cursor: pointer
+  font-size: 1rem
+  color: #ef4444
+
+.sum
+  font-weight: 600
+  color: #111827

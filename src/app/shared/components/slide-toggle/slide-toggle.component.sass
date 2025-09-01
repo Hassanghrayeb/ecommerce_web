@@ -1,0 +1,41 @@
+@import "src/assets/global-styles/mixins/mixins"
+.toggle_wrapper
+  display: flex
+  flex-direction: row
+  width: 100%
+  padding: 5px
+  gap: 5px
+  cursor: pointer
+
+  &.primary20
+    background-color: var(--primary-color-1-1)
+    color: var(--text-neutral-color-2)
+  &.primary10
+    color: var(--text-neutral-color-2)
+    background-color: var(--primary-color-1-2)
+
+  .toggle_option
+    display: flex
+    padding: 10px 20px
+    justify-content: center
+    align-items: center
+    font-size: 12px
+    @include media-breakpoint('lt-md')
+      width: 50%
+    &.rectangle
+      border-radius: 10px
+    &.round
+      border-radius: 45px
+
+    &.active
+      &.primary20
+        background-color: #892232
+        color: var(--white)
+      &.primary10
+        background-color: #231F20
+        color: var(--white)
+
+  &.rectangle
+    border-radius: 10px
+  &.round
+    border-radius: 45px

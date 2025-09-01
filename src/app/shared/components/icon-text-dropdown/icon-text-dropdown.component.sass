@@ -1,0 +1,51 @@
+.dropdown-container
+  border: 1.5px solid var(--primary-color-1-2)
+  border-radius: 50px
+  padding: 0 15px
+  .list-items
+    list-style: none
+    padding: 0
+    gap: 10px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    margin: 0
+    .nav_element
+      display: flex
+      align-items: center
+      padding: 15px
+      height: 24px
+      cursor: pointer
+      transition: background-color 0.3s
+      gap: 10px
+      width: 95%
+      color: var(--text-primary-color-1)
+      &.selected 
+        .item-details
+          color: var(--text-primary-color-3)
+          .material-symbols-outlined
+            color: inherit
+      .nav_element_label
+        font-size: 15px
+      .item-details
+        display: flex
+        flex: 1
+        gap: 10px
+        align-items: center
+      .btn-style
+        background-color: transparent
+        border: 0
+        color: inherit
+.expanded
+  overflow: hidden
+  animation: expand 500ms ease-in-out
+
+
+@keyframes expand
+  0%
+    height: 0
+    opacity: 0
+  100%
+    height: 100%
+    opacity: 1

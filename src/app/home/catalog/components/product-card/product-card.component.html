@@ -1,0 +1,9 @@
+<article class="card">
+  <h3>{{ product.name }}</h3>
+  <p class="desc">{{ product.description }}</p>
+
+  <div class="row">
+    <span class="price">{{ product.price | currency }}</span>
+    <button (click)="add.emit(product.id)">Add</button>
+  </div>
+</article>

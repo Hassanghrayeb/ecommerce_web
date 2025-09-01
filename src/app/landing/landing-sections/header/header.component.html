@@ -1,0 +1,17 @@
+<div class="header_wrapper" [ngClass]="{'header_wrapper-rtl': direction === 'rtl'}">
+  <div></div>
+  <div class="login_wrapper">
+    <div class="action_btn">
+      <laitron-button [shape]="inputShape.PRIMARY" [color]="inputColor.LANDING_PRIMARY_23"
+                     [buttonText]="'auth.login.login' | translate" [iconDirection]="'right'"
+                     [buttonIcon]="'person'"
+                     (buttonClick)="onLoginClicked()"></laitron-button>
+    </div>
+    <div class="small_action_btn">
+      <laitron-button [shape]="inputShape.PRIMARY" [color]="inputColor.LANDING_PRIMARY_23"
+                     [iconDirection]="'right'"
+                     [buttonIcon]="'person'"
+                     (buttonClick)="onLoginClicked()"></laitron-button>
+    </div>
+  </div>
+</div>

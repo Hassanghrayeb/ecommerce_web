@@ -1,0 +1,32 @@
+<laitron-shared-dialog
+  [title]="'auth.login.sign_in' | translate"
+  [actionButtons]="actionButtons"
+>
+  <div class="body">
+    <form [formGroup]="loginForm" class="form">
+      <laitron-input-form-field
+        formControlName="email"
+        placeholdertext="{{'auth.login.email' | translate}}"
+        [color]="inputColor.PRIMARY11"
+        [mode]="inputMode.LIGHT"
+        placeholderIcon="email"
+        [withLabel]="true">
+      </laitron-input-form-field>
+
+      <laitron-input-form-field
+        formControlName="password"
+        placeholdertext="{{'auth.login.password' | translate}}"
+        [isPassword]="true"
+        [color]="inputColor.PRIMARY11"
+        [mode]="inputMode.LIGHT"
+        placeholderIcon="password"
+        [withLabel]="true">
+      </laitron-input-form-field>
+      <p class="signup_link">
+        <span class="no_account"> {{"auth.login.no_account" | translate}} </span>
+        <a class="link" (click)="openRegistrationDialog()"> {{"auth.login.register" | translate}} </a>
+      </p>
+    </form>
+  </div>
+
+</laitron-shared-dialog>

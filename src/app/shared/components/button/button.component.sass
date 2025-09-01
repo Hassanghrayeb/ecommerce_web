@@ -1,0 +1,190 @@
+@import "src/assets/global-styles/base/base"
+
+.action-btn
+  @include flex-center
+  min-width: max-content
+  width: 100%
+  min-height: 44px
+  border: none
+  overflow: hidden
+  gap: 10px
+  font-size: 14px
+  font-family: goli-regular !important
+  padding: 0 30px
+  &.sm
+    padding: 10px
+  &.button10
+    background-color: var(--button-primary-1-0)
+    color: var(--white)
+    .icon
+      color: var(--white)
+  &.button10:hover
+    background-color: var(--button-primary-1-0-hover)
+  &.button20
+    background-color: var(--button-primary-2-0)
+    color: var(--white)
+    .icon
+      color: var(--white)
+  &.button20:hover
+    background-color: var(--button-primary-2-0-hover)
+  &.transparent1
+    background-color: transparent
+    border: 1px solid var(--primary-neutral-color-1)
+    color: var(--text-primary-color-1)
+  &.transparent1:hover
+    background-color: var(--primary-neutral-color-1)
+    border: none
+    color: var(--text-primary-color-2)
+    .icon
+      filter: invert(100%)
+  &.transparent2
+    background-color: transparent
+    color: var(--text-primary-color-1)
+  &.transparent2:hover
+    background-color: var(--primary-color-1-5)
+  &.white
+    background-color: var(--primary-neutral-color-1)
+    color: var(--text-primary-color-2)
+    .icon
+      filter: invert(100%)
+  &.neutral1
+    background-color: transparent
+    border: 1px solid var(--primary-neutral-color-1)
+  &.neutral1:hover
+    border: none
+    background-color: var(--primary-color-1-1)
+  &.primary12
+    background-color: var(--primary-color-1-2)
+    color: var(--text-primary-color-3)
+    .icon
+      color: var(--text-primary-color-3)
+  &.primary12:hover
+    background-color: var(--primary-color-1-3)
+  &.primary10
+    background-color: var(--button-primary-1-0)
+    color:  var(--white)
+  &.primary11
+    background-color: var(--primary-color-1-1)
+    color: var(--text-primary-color-1)
+  &.primary11:hover
+    background-color: var(--primary-color-1-2)
+  &.primary13
+    background-color: var(--primary-color-1-3)
+    color: var(--text-primary-color-1)
+  &.primary13:hover
+    background-color: var(--primary-color-1-2)
+  &.primary20
+    background-color: var(--primary-color-2-0)
+    color: white
+  &.primary20:hover
+    background-color: var(--primary-color-2-3)
+    color: var(--text-primary-color-1)
+  &.primary10:hover
+    background-color: var(--button-primary-1-0-hover)
+    border: none
+  &.primary23
+    background-color: var(--primary-color-2-3)
+    color: var(--text-primary-color-1)
+  &.primary23:hover
+    background-color: var(--primary-color-2-4)
+  &.primary24
+    background-color: var(--primary-color-2-4)
+    color: var(--text-primary-color-1)
+  &.primary24:hover
+    background-color: var(--primary-color-2-3)
+
+  &.landing-primary-11
+    background-color: var(--landing-primary-color-1-1)
+    color: white
+  &.landing-primary-23
+    background-color: var(--landing-primary-color-2-3)
+    color: white
+  &.landing-primary-23:hover
+    background-color: var(--landing-primary-color-2-4)
+  &.landing-primary-11:hover
+    background-color: var(--landing-primary-color-1-2)
+    border: none
+
+  &.secondary24.empty
+    background-color: transparent
+    border: 1px solid var(--primary-neutral-color-1)
+    color: var(--text-neutral-color-2)
+  &.secondary24.filled
+    background-color: var(--primary-color-1-0)
+    color: var(--text-neutral-color-2)
+    &.disabled
+      background-color: var(--primary-color-2-0)
+  &.secondary25
+    background-color: var(--secondary-color-2-5)
+  &.secondary26.empty
+    background-color: transparent
+    border: 1px solid var(--primary-neutral-color-1)
+    color: var(--text-neutral-color-2)
+  &.secondary26.filled
+    background-color: var(--primary-color-1-0)
+    color: var(--text-neutral-color-2)
+    &.disabled
+      background-color: var(--primary-color-2-0)
+  &.red
+    color: var(--text-tertiary-color-1)
+    background-color: var(--button-secondary-2-5)
+    .icon
+      color: red
+  &.other2
+    background-color: var(--other-color-2)
+    color: var(--other-color-1)
+    .icon
+      color: red
+  &.other2:hover
+    background-color: var(--text-tertiary-color-1)
+    color: white
+    .icon
+      color: var(--white)
+  &.transparent
+    background-color: transparent
+    border: 1px solid var(--primary-color-1-0)
+    color: var(--text-primary-color-1)
+  &.transparent.empty
+    background-color: transparent
+    border: 1px solid var(--primary-color-1-0)
+  &.transparent.empty:hover
+    background-color: var(--primary-color-1-2)
+
+
+
+  &.secondary24:hover
+    background-color: var(--primary-color-1-2)
+  &.secondary24.empty:hover
+    background-color: var(--primary-color-1-2)
+    border: none
+  &.secondary26:hover
+    background-color: var(--button-transparent-1-hover)
+    color: var(--text-neutral-color-3)
+  &.secondary26.empty:hover
+    background-color: var(--button-transparent-1-hover)
+    border: none
+    color: var(--text-neutral-color-3)
+
+  &.neutral1:hover
+    background-color: var(--primary-neutral-color-3)
+    border: none
+  &.red:hover
+    background-color: var(--button-secondary-2-5-hover)
+    color: var(--white)
+    .icon
+      filter: brightness(0) invert(1)
+  &.transparent:hover
+    background-color: var(--primary-color-1-0)
+    color: white
+    .icon
+      filter: brightness(0) invert(1)
+
+  &.round
+    border-radius: 45px
+  &.rectangle
+    border-radius: 10px
+
+
+.action-btn:hover
+  border: 1px solid var(--fourth-color-3)
+  cursor: pointer

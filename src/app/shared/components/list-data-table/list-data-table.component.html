@@ -1,0 +1,133 @@
+<div class="table-wrapper" *ngIf="data && data.currentlyVisibleRows; else noData">
+  <div class="record-header-row record-row" [ngClass]="color">
+    <div class="record-header record-cell" *ngFor="let col of columnsDefinition" [ngStyle]="{'width': col.width}">
+      {{ col.label | translate }}
+    </div>
+  </div>
+
+  <div class="record-data-row" *ngFor="let row of data.currentlyVisibleRows">
+
+    <div class="record-row">
+      <div class="record-cell record-data-cell" *ngFor="let col of columnsDefinition" [ngStyle]="{'width': col.width}">
+        <ng-container *ngIf="col?.format === columnFormat.Action">
+          <div [ngClass]="getCellClass(col)" [matTooltip]="getMatToolTipMessage(col?.tooltipLabel) | translate"
+               *ngIf="col.visible && (row.editable == undefined || (row.editable != undefined && row.editable))">
+            <mat-icon *ngIf="col.icon" (click)="actionClicked(col, row)" class="actionicon">{{ col.icon }}
+            </mat-icon>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="col?.format === columnFormat.Toggle">
+          <div [ngClass]="getCellClass(col)">
+            <mat-slide-toggle #componentRef color="primary" [checked]="getCheckedVal(col, row)"
+                              (click)="toggleClicked(col, row, $event, componentRef)" [disabled]="col && col.disabled">
+            </mat-slide-toggle>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="col?.format === columnFormat.Boolean">
+          <div [ngClass]="getCellClass(col)">
+            <mat-checkbox color="primary" [checked]="row[col.property]" #componentRef
+                          (click)="checkboxClicked(col, row, $event, componentRef)" [disabled]="col && col.disabled">
+            </mat-checkbox>
+          </div>
+        </ng-container>
+        <ng-container *ngIf="col?.format === columnFormat.List">
+          <div [ngClass]="getCellClass(col)" class="list_cell">
+            <div *ngFor="let elem of row[col.property]">
+              <div class="list_elem" [ngClass]="elem.type">{{ elem.name }}</div>
+            </div>
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="col?.format === columnFormat.Date">
+          <div [ngClass]="getCellClass(col)">
+            {{ formatCellValue(col, row) | date:'dd/MM/yyyy' }}
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="col?.format === columnFormat.DateTime">
+          <div [ngClass]="getCellClass(col)">
+            {{ formatCellValue(col, row) | date:'yyyy-MM-dd HH:mm' }}
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="col?.format === columnFormat.ARRAY">
+          <div [ngClass]="getCellClass(col)">
+            <ul class="array-list">
+              <li *ngFor="let elem of row[col.property]">
+                <div>
+                  <!-- Check if elem is an object and has a 'name', otherwise display the value -->
+                  <ng-container *ngIf="elem && elem.name !== undefined; else showPrimitive">
+                    {{ elem.name }}
+                  </ng-container>
+                  <ng-template #showPrimitive>
+                    {{ elem }}
+                  </ng-template>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="col?.format === columnFormat.NAME_DESCRIPTION_CHIP">
+          <div [ngClass]="getCellClass(col)" class="name-desc-cell">
+            <div>{{ getNameDescriptionChipValues(col, row).name }}</div>
+            <div class="subText" *ngIf="getNameDescriptionChipValues(col, row).description">
+              {{ getNameDescriptionChipValues(col, row).description }}
+            </div>
+          </div>
+        </ng-container>
+
+        <ng-container
+          *ngIf="col?.format !== columnFormat.Action
+          && col?.format !== columnFormat.Toggle
+          && col?.format !== columnFormat.List
+          && col?.format !== columnFormat.Date
+          && col?.format !== columnFormat.DateTime
+          && col?.format !== columnFormat.Boolean
+          && col?.format !== columnFormat.ARRAY
+          && col?.format !== columnFormat.NAME_DESCRIPTION_CHIP">
+          <div [ngClass]="getCellClass(col)">
+            {{ formatCellValue(col, row) }}
+          </div>
+        </ng-container>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="paginator"
+       *ngIf="paginatorConfig.enabled !== configTypeEnum.NONE  && data.currentlyVisibleRows && data.currentlyVisibleRows.length > 0">
+    <mat-icon class="material-icons-outlined navigation_icon"
+              [ngClass]="{'isDisabled': pageChangeEvent && pageChangeEvent.page == 0}"
+              color="primary" (click)="pageChangeEvent && pageChangeEvent.page > 0 ? clickPage(false, true) : null">
+      first_page
+    </mat-icon>
+    <mat-icon class="material-icons-outlined navigation_icon"
+              [ngClass]="{'isDisabled': pageChangeEvent && pageChangeEvent.page == 0}"
+              color="primary" (click)="pageChangeEvent && pageChangeEvent.page > 0 ? clickPage(false) : null">
+      chevron_left
+    </mat-icon>
+    <div class="navigation_nb" *ngIf="pageChangeEvent">
+      {{ pageChangeEvent.page + 1 }} / {{ getPageNb() }}
+    </div>
+    <mat-icon class="material-icons-outlined navigation_icon" color="primary"
+              (click)="pageChangeEvent && pageChangeEvent.page + 1 < getPageNb() ? clickPage(true) : null"
+              [ngClass]="{'isDisabled': pageChangeEvent && pageChangeEvent.page + 1 == getPageNb()}">
+      chevron_right
+    </mat-icon>
+    <mat-icon class="material-icons-outlined navigation_icon" color="primary"
+              (click)="pageChangeEvent && pageChangeEvent.page + 1 < getPageNb() ? clickPage(true, true) : null"
+              [ngClass]="{'isDisabled': pageChangeEvent && pageChangeEvent.page + 1 == getPageNb()}">
+      last_page
+    </mat-icon>
+  </div>
+
+</div>
+
+<ng-template #noData>
+  <div>
+    {{ 'generic.table.no_data' | translate }}
+
+  </div>
+</ng-template>

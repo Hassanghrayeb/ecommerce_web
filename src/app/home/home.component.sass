@@ -1,0 +1,18 @@
+@import "src/assets/global-styles/mixins/mixins"
+.main-layout
+  display: flex
+  height: 100vh
+  background-color: var(--primary-color-1-0)
+  @include media-breakpoint('lt-md')
+    padding-left: 5px
+    padding-right: 5px
+    laitron-side-nav
+      display: none
+
+.content
+  flex: 1
+  overflow: auto
+  laitron-chat-header
+    display: none
+    @include media-breakpoint('lt-md')
+      display: flex

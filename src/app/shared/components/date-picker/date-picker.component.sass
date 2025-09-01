@@ -1,0 +1,89 @@
+@import "src/assets/global-styles/abstracts/colors"
+@import "src/assets/global-styles/base/base"
+
+.date-picker-container
+  width: 100%
+  display: flex
+  flex-direction: column
+
+  .calendar
+    width: 100%
+
+  .input_field_label
+    margin-bottom: 10px
+    font-size: 14px
+    color: var(--text-primary-color-1)
+    display: flex
+    align-items: center
+    gap: 10px
+
+  .picker-field
+    padding: 0 10px
+    width: calc(100% - 20px)
+    border: none
+
+
+  ::ng-deep 
+    .mat-mdc-text-field-wrapper
+      height: 47px
+      padding: 0 !important
+      border-radius: inherit !important
+      .mat-mdc-form-field-flex
+        height: 47px
+        border-radius: inherit !important
+        .mat-mdc-form-field-infix
+          min-height: 47px
+          padding: 0
+          place-content: center
+          border-radius: inherit !important
+          .mat-mdc-input-element
+            color: var(--text-primary-color-1) !important
+            border-radius: inherit !important
+        .mat-mdc-form-field-icon-suffix
+          padding: 0 4px
+          border-radius: inherit !important
+           
+    .mdc-text-field__input
+      color: var(--text-primary-color-1) !important
+      border-radius: inherit !important 
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, 
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing, 
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch
+      border-radius: inherit !important
+      border-color: transparent !important
+
+  &.secondary24
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-4)
+
+  &.secondary22
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-2)
+
+  &.secondary25
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--secondary-color-2-5)
+  &.primary12
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--primary-color-1-2)
+  &.primary13
+    ::ng-deep .mat-mdc-text-field-wrapper
+      background-color: var(--primary-color-1-3)
+
+  &.rectangle
+    .calendar
+      border-radius: 10px
+    ::ng-deep 
+      .mat-mdc-text-field-wrapper
+        border-radius: 10px
+      .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing
+        border-radius: 10px
+  &.round
+    .calendar
+      border-radius: 45px
+    ::ng-deep 
+      .mat-mdc-text-field-wrapper
+        border-radius: 45px
+      .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing
+        border-radius: 45px
+

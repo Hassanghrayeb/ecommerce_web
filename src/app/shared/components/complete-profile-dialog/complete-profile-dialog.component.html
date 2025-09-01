@@ -1,0 +1,39 @@
+<laitron-shared-dialog
+  [title]="'settings_module.profile_info.profile_info' | translate"
+  [actionButtons]="actionButtons">
+  <div class="body">
+    <form [formGroup]="profileForm" class="form">
+      <ng-container *ngIf="profileForm.get('firstName')">
+        <laitron-input-form-field
+          formControlName="firstName"
+          placeholdertext="{{'settings_module.profile_info.first_name' | translate}}"
+          [color]="inputColor.PRIMARY11"
+          [mode]="inputMode.LIGHT"
+          [showValidationError]="true"
+          [withLabel]="true">
+        </laitron-input-form-field>
+      </ng-container>
+      <ng-container *ngIf="profileForm.get('lastName')">
+        <laitron-input-form-field
+          formControlName="lastName"
+          placeholdertext="{{'settings_module.profile_info.last_name' | translate}}"
+          [color]="inputColor.PRIMARY11"
+          [mode]="inputMode.LIGHT"
+          [showValidationError]="true"
+          [withLabel]="true">
+        </laitron-input-form-field>
+      </ng-container>
+      <ng-container *ngIf="profileForm.get('email')">
+        <laitron-input-form-field
+          formControlName="email"
+          placeholdertext="{{'settings_module.profile_info.email' | translate}}"
+          [color]="inputColor.PRIMARY11"
+          [mode]="inputMode.LIGHT"
+          placeholderIcon="email"
+          [showValidationError]="true"
+          [withLabel]="true">
+        </laitron-input-form-field>
+      </ng-container>
+    </form>
+  </div>
+</laitron-shared-dialog>

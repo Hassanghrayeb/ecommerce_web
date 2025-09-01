@@ -1,0 +1,30 @@
+<div class="section_box" [ngClass]="{'with-border': withBorder}">
+  <div class="header">
+    <div class="title">
+      <span class="title_label">
+        {{ title | translate }}
+      </span>
+      <span *ngIf="!descriptionWithHtml" class="title_desc">
+        {{ description | translate }}
+      </span>
+      <div *ngIf="descriptionWithHtml" [innerHTML]="descriptionWithHtml"></div>
+    </div>
+    <div  class="action" *ngIf="button">
+        <laitron-button
+          *ngFor="let button of button"
+          [buttonText]="button.label | translate"
+          [color]="button.color"
+          [shape]="button.shape"
+          [mode]="button.mode"
+          [buttonIcon]="button.icon"
+          [iconDirection]="button.iconDirection"
+          (buttonClick)="button.action && button.action(0)"
+          class="action_btn"
+        ></laitron-button>
+    </div>
+  </div>
+  <div class="content">
+    <ng-content></ng-content>
+  </div>
+
+</div>

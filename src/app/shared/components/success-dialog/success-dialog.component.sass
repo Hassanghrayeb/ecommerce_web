@@ -1,0 +1,36 @@
+@import "src/assets/global-styles/abstracts/dialog-styling"
+.success_dialog
+  display: flex
+  flex-direction: column
+  gap: 15px
+  color: var(--text-primary-color-1)
+
+  .body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    gap: 20px
+    padding: 10px
+  .title
+    font-size: 18px
+    font-weight: 600
+  .note
+    font-size: 16px
+    font-weight: 500
+    color: var(--text-secondary-color-1)
+  .description
+    font-size: 16px
+    font-weight: 500
+    padding: 0 30px
+    text-align: left
+  .rtl-direction
+    direction: rtl
+    text-align: right
+  .actions
+    display: flex
+    gap: 15px
+    flex-direction: row
+    laitron-button
+      flex: 1

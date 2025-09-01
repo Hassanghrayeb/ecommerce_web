@@ -1,0 +1,37 @@
+<aside class="panel">
+  <header>
+    <h3>{{ 'catalog_module.cart.your' | translate }}</h3>
+    <span class="badge" *ngIf="count()">{{ count() }}</span>
+  </header>
+
+  <ng-container *ngIf="items().length; else empty">
+    <hr />
+
+    <laitron-cart-item-row
+      *ngFor="let it of items(); trackBy: trackById"
+      [item]="it"
+      (qtyChange)="setQty(it.id, $event)"
+      (remove)="remove(it.id)"
+    >
+    </laitron-cart-item-row>
+
+    <hr />
+
+    <div class="summary">
+      <small>{{ 'catalog_module.cart.sub_total' | translate }}</small>
+      <div class="total">
+        <span>{{ 'catalog_module.cart.empty' | translate }}</span>
+        <span>{{ total() | currency }}</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="secondary" (click)="clear()">{{ 'catalog_module.cart.clear' | translate }}</button>
+      <button class="primary" (click)="checkout()">{{ 'catalog_module.cart.checkout' | translate }}</button>
+    </div>
+  </ng-container>
+
+  <ng-template #empty>
+    <p>{{ 'catalog_module.cart.empty' | translate }}</p>
+  </ng-template>
+</aside>

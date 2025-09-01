@@ -1,0 +1,69 @@
+<div
+  class="dropdown_wrapper"
+  *ngIf="ngControl?.control"
+  [ngClass]="[color, shape, textSize]"
+>
+  <mat-label class="input_field_label text_neutral_color_2" *ngIf="withLabel">
+    <span class="material-symbols-outlined" *ngIf="placeholderIcon">{{ placeholderIcon }}</span>
+    <span> {{ fieldLabel ? fieldLabel : (placeholdertext | translate) }} </span>
+  </mat-label>
+  <div>
+    <mat-form-field class="single_select" appearance="outline">
+      <mat-select
+        #select
+        [formControl]="formControl"
+        placeholder="{{ placeholdertext | translate }}"
+        class="ai_dropdown"
+        [panelClass]="customPanelClass ? customPanelClass + ' ai_dropdown_panel' : 'ai_dropdown_panel'"
+        [multiple]="isMultiple"
+      >
+        <mat-select-trigger *ngIf="withIcon">
+          <span class="selected-values" *ngIf="getSelectedValue()">
+            <ng-container *ngFor="let icon of getSelectedValueIcon()">
+              <span class="selected-item">
+                <img [src]="icon.icon" class="dropdown_icon"/>
+              </span>
+            </ng-container>
+          </span>
+        </mat-select-trigger>
+
+
+        <div class="dropdown_title">
+          <span *ngIf="title" class="dropdown_title_text">{{ title }}</span>
+        </div>
+
+        <mat-option *ngIf="isMultiple" (click)="toggleAllFromClick($event)" class="all_option">
+          <mat-checkbox [checked]="isAllSelected()" (click)="toggleAllFromClick($event)"></mat-checkbox>
+          <span>All</span>
+        </mat-option>
+
+        <mat-option
+          *ngFor="let option of dropdownOptions"
+          [value]="option.value"
+          [class.value_option]="isMultiple"
+          (click)="isMultiple ? null : optionSelected()"
+        >
+          <div class="dropdown_option">
+            <mat-checkbox
+              *ngIf="isMultiple"
+              [checked]="isSelected(option)"
+              disableRipple
+              tabindex="-1"
+            ></mat-checkbox>
+            <img
+              *ngIf="withIcon && option.icon"
+              [src]="option.icon"
+              class="dropdown_icon"
+            />
+            <span>{{ option.label }}</span>
+          </div>
+        </mat-option>
+
+      </mat-select>
+    </mat-form-field>
+    <laitron-input-form-error *ngIf="showValidationError" [control]="ngControl.control"></laitron-input-form-error>
+    <mat-icon *ngIf="withClearButton" class="clear_icon" (click)="clear()"
+    >clear
+    </mat-icon>
+  </div>
+</div>

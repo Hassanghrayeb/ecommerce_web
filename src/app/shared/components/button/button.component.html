@@ -1,0 +1,6 @@
+<button class="action-btn" (click)="onButtonClick()" [type]="buttonType" [disabled]="disabled"
+[ngClass]="[color,buttonSize, shape, mode, disabled ? 'disabled' : '']" [matTooltip]="tooltip || ''" >
+  <span *ngIf="buttonIcon && iconDirection ==='left'" class="material-symbols-outlined icon">{{buttonIcon}}</span>
+  <span *ngIf="buttonText"> {{ buttonText }} </span>
+  <span *ngIf="buttonIcon && iconDirection ==='right'" class="material-symbols-outlined icon">{{buttonIcon}}</span>
+</button>

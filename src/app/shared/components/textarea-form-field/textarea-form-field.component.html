@@ -1,0 +1,11 @@
+<div class="input_textarea_field" *ngIf="ngControl?.control" [ngClass]="[color,shape]">
+    <mat-label class="input_textarea_field_label" *ngIf="withLabel" [ngClass]="mode">
+      <span class="material-symbols-outlined" *ngIf="placeholderIcon">{{placeholderIcon}}</span>
+      {{ fieldLabel ? fieldLabel : placeholdertext | translate }} </mat-label>
+    <mat-form-field color="primary" appearance="outline">
+      <textarea matInput cdkTextareaAutosize  cdkAutosizeMinRows={{minRows}} cdkAutosizeMaxRows={{maxRows}} 
+        [formControl]="formControl" placeholder="{{ placeholdertext | translate }}" class="input_textarea">
+      </textarea>
+    </mat-form-field>
+  </div>
+  

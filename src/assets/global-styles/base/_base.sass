@@ -1,0 +1,50 @@
+@import "../abstracts/colors"
+
+$side_nav_width_opened: 338px
+$side_nav_width_closed: 50px
+$responsive_side_nav_width_closed: 50px
+$responsive_side_nav_width_opened: 250px
+$chat_header_height: 80px
+$header_height: 70px
+
+@mixin flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+body
+    margin: 0
+    font-family: "goli-regular" !important
+    background-color: var(--text-neutral-color-2)
+    height: 100vh
+
+button
+    font-family: "goli-semiBold" !important
+
+body.light-mode
+  @include light-mode
+
+
+body.dark-mode
+  @include dark-mode
+
+body.light-mode
+  @include light-mode
+
+body.dark-mode
+  @include dark-mode
+
+table
+  border-collapse: collapse
+  width: 100%
+  margin: 1rem 0
+
+
+table, th, td
+  border: 1px solid var(--text-primary-color-1)
+
+
+th, td
+  padding: 8px 12px
+  text-align: left
+

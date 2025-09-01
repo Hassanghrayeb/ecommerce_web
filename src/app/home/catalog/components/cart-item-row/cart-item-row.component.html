@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="meta">
+    <strong>{{ item.productName || ('#' + item.productId) }}</strong>
+    <small>{{ item.unitPrice | currency }}</small>
+  </div>
+
+  <div class="qty">
+    <button 
+      (click)="qtyChange.emit(item.quantity - 1)" 
+      [disabled]="item.quantity <= 1"
+    >
+      –
+    </button>
+    <span>{{ item.quantity }}</span>
+    <button (click)="qtyChange.emit(item.quantity + 1)">+</button>
+  </div>
+
+  <div class="sum">
+    {{ item.unitPrice * item.quantity | currency }}
+  </div>
+
+  <button class="remove" (click)="remove.emit()">✕</button>
+</div>

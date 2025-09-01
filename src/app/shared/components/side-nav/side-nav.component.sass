@@ -1,0 +1,62 @@
+@import "src/assets/global-styles/base/base"
+
+.side-nav
+    width: 90px
+    height: 100vh
+    margin-right: 10px
+    background-color: var(--primary-color-1-1)
+    display: flex
+    flex-direction: column
+    align-items: center
+    .logo
+        margin: 50px 0
+        cursor: pointer
+    ul
+        list-style: none
+        padding: 0
+        width: 100%
+        li
+            @include flex-center
+            flex-direction: column
+            gap: 5px
+            width: 100%
+            margin-bottom: 20px
+
+            a
+                @include flex-center
+                width: 35px
+                height: 35px
+                border-radius: 50px
+                text-decoration: none
+
+            a.active
+                background-color: var(--primary-color-2-4)
+                padding: 10px
+                .icon
+                  color: var(--white)
+            a.disabled
+              cursor: pointer
+
+            .button-text
+                color: var(--text-neutral-color-2)
+                font-size: 12px
+                text-align: center
+    .user-profile
+        bottom: 25px
+        position: fixed
+        cursor: pointer
+        .initials
+            @include flex-center
+            width: 45px
+            height: 45px
+            background-color: var(--primary-color-2-3)
+            color: var(--text-primary-color-1)
+            border-radius: 10px
+            margin-bottom: 10px
+
+::ng-deep
+    .mat-mdc-menu-content:has(.profile_menu)
+        padding: 5px !important
+    .mat-mdc-menu-panel:has(.profile_menu)
+        border-radius: 10px
+        background-color: var(--primary-color-1-2)

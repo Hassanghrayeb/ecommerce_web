@@ -1,0 +1,14 @@
+@import "src/assets/global-styles/mixins/mixins"
+
+.body
+  display: flex
+  flex-direction: column
+  .section
+    display: flex
+    flex-direction: row
+    gap: 25px
+    @include media-breakpoint('lt-sm')
+      flex-wrap: wrap
+      gap: 0
+    laitron-input-form-field
+      width: 100%

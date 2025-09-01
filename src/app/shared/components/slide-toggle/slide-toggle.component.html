@@ -1,0 +1,16 @@
+<div class="toggle_wrapper" [ngClass]="[shape, color]" (click)="toggleChoice()">
+  <div
+    class="toggle_option"
+    [ngClass]="{ 'active': selectedChoice === choices[0] }"
+    [class]="shape + ' ' + color"
+  >
+    {{ choices[0] | translate }}
+  </div>
+  <div
+    class="toggle_option"
+    [ngClass]="{ 'active': selectedChoice === choices[1] }"
+    [class]="shape + ' ' + color"
+  >
+    {{ choices[1] | translate}}
+  </div>
+</div>

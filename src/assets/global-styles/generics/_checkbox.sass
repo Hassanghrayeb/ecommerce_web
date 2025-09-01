@@ -1,0 +1,21 @@
+.checkbox_field
+    padding: 26px 0
+    @include media-breakpoint('lt-sm')
+        padding: 0
+    .mat-mdc-checkbox label
+      color: var(--text-primary-color-1)
+      font-family: goli-regular
+
+    .mdc-checkbox__native-control
+      &:enabled:checked ~ .mdc-checkbox__background,
+      &:enabled:indeterminate ~ .mdc-checkbox__background,
+      &:focus:not(:checked) ~ .mdc-checkbox__background,
+      &:focus:not(:indeterminate) ~ .mdc-checkbox__background
+        border-radius: 4px
+        background-color: transparent
+        border: 1px solid var(--primary-neutral-color-1) !important
+
+    .mdc-checkbox__background
+      border-radius: 4px
+      background-color: transparent
+      border: 1px solid var(--primary-neutral-color-1) !important

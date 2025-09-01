@@ -1,0 +1,13 @@
+<div
+  class="page-title"
+  [ngClass]="{ 'with-border': withBorder, 'rtl': direction === 'rtl', 'ltr': direction === 'ltr' }"
+>
+  <div>
+    <button class="back" [title]="title" *ngIf="backEnabled" mat-icon-button color="white" (click)="goBack()">
+     <span class="material-icons-outlined">keyboard_backspace</span>
+    </button>
+    <div *ngIf="title" [ngClass]="textSize" class="title-text" [attr.title]="title">{{ title }}</div>
+  </div>
+
+  <ng-content></ng-content>
+</div>
