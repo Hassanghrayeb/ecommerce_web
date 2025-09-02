@@ -142,9 +142,9 @@ export class RegistrationFormDialogComponent implements OnInit{
       maxWidth: '600px',
       maxHeight: '400px',
       data: {
-        title: 'landing.registeration_success',
-        successIcon: 'assets/icons/payment_success.svg',
-        description: 'landing.registeration_success_description',
+        title: 'landing.request_success',
+        successIcon: 'assets/icons/check.svg',
+        description: 'landing.request_success_description',
         buttons: [this.successButton]
       }
     });
@@ -152,6 +152,7 @@ export class RegistrationFormDialogComponent implements OnInit{
 
 
   private login(): void {
+    this._dialog.closeAll();
     const screenWidth = window.innerWidth;
     const dialogWidth = screenWidth < 600 ? `${screenWidth - 50}px` : '400px';
     this._dialog.open(LoginFormDialogComponent, {
