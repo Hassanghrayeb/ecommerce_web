@@ -12,7 +12,7 @@ import { PageChangeEvent } from 'src/app/shared/models/page-change-event.interfa
 import { CartItemModel, CartModel } from 'src/app/home/catalog/models/catalog.model';
 
 @Component({
-  selector: 'laitron-cart-management',
+  selector: 'ecommerce-cart-management',
   templateUrl: './cart-management.component.html',
   styleUrl: './cart-management.component.sass'
 })

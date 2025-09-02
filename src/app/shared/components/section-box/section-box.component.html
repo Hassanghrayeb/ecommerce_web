@@ -10,7 +10,7 @@
       <div *ngIf="descriptionWithHtml" [innerHTML]="descriptionWithHtml"></div>
     </div>
     <div  class="action" *ngIf="button">
-        <laitron-button
+        <ecommerce-button
           *ngFor="let button of button"
           [buttonText]="button.label | translate"
           [color]="button.color"
@@ -20,7 +20,7 @@
           [iconDirection]="button.iconDirection"
           (buttonClick)="button.action && button.action(0)"
           class="action_btn"
-        ></laitron-button>
+        ></ecommerce-button>
     </div>
   </div>
   <div class="content">

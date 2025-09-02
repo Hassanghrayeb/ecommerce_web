@@ -3,7 +3,7 @@ import { AbstractControl, ControlValueAccessor, FormControl, NgControl } from '@
 import {InputColor, InputMode, InputShape} from '../../enums/input-mode.enum';
 
 @Component({
-  selector: 'laitron-input-form-field',
+  selector: 'ecommerce-input-form-field',
   templateUrl: './ai-input-form-field.component.html',
   styleUrls: ['./ai-input-form-field.component.sass']
 })

@@ -4,7 +4,7 @@ import {TranslateService} from '@ngx-translate/core';
 import {StorageEnum} from "./shared/models/storage.enum";
 
 @Component({
-  selector: 'laitron-root',
+  selector: 'ecommerce-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })

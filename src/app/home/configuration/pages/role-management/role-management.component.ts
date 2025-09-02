@@ -17,7 +17,7 @@ import { Subject } from 'rxjs';
 import { debounceTime, takeUntil } from 'rxjs/operators';
 
 @Component({
-  selector: 'laitron-role-management',
+  selector: 'ecommerce-role-management',
   templateUrl: './role-management.component.html',
   styleUrl: './role-management.component.sass'
 })

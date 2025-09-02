@@ -9,7 +9,7 @@ import {RolesService} from '../../services/roles.service';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'laitron-role-form',
+  selector: 'ecommerce-role-form',
   templateUrl: './role-form.component.html',
   styleUrl: './role-form.component.sass'
 })

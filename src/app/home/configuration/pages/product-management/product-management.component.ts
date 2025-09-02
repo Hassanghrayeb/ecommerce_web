@@ -16,7 +16,7 @@ import { ProductFormComponent } from '../../components/product-form/product-form
 import { ViewLowStockComponent } from '../../components/view-low-stock/view-low-stock.component';
 
 @Component({
-  selector: 'laitron-product-management',
+  selector: 'ecommerce-product-management',
   templateUrl: './product-management.component.html',
   styleUrl: './product-management.component.sass'
 })

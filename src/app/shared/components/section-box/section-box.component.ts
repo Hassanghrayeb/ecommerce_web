@@ -3,7 +3,7 @@ import {InputColor, InputMode, InputShape} from "../../enums/input-mode.enum";
 import {ButtonModel} from "../../models/button.model";
 
 @Component({
-  selector: 'laitron-section-box',
+  selector: 'ecommerce-section-box',
   templateUrl: './section-box.component.html',
   styleUrl: './section-box.component.sass'
 })

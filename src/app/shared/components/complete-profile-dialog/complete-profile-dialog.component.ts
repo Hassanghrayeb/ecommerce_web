@@ -17,7 +17,7 @@ interface DialogData {
 }
 
 @Component({
-  selector: 'laitron-complete-profile-dialog',
+  selector: 'ecommerce-complete-profile-dialog',
   templateUrl: './complete-profile-dialog.component.html',
   styleUrl: './complete-profile-dialog.component.sass'
 })

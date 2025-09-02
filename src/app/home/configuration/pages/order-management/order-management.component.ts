@@ -12,7 +12,7 @@ import { OrdersColumnDef } from './order.config';
 import { OrderItemModel, OrderModel } from '../../models/order.model';
 
 @Component({
-  selector: 'laitron-order-management',
+  selector: 'ecommerce-order-management',
   templateUrl: './order-management.component.html',
   styleUrl: './order-management.component.sass'
 })

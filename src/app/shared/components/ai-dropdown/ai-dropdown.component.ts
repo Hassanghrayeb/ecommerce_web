@@ -5,7 +5,7 @@ import {AbstractControl, FormControl, NgControl} from '@angular/forms';
 import {MatSelect, MatSelectChange} from '@angular/material/select';
 
 @Component({
-  selector: 'laitron-dropdown',
+  selector: 'ecommerce-dropdown',
   templateUrl: './ai-dropdown.component.html',
   styleUrl: './ai-dropdown.component.sass'
 })

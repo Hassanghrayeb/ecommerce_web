@@ -1,11 +1,11 @@
 <div class="profile_info_wrapper" *ngIf="!isLoading">
-  <laitron-section-box
+  <ecommerce-section-box
     [button]="saveProfileInformationButton"
     [title]="'settings_module.profile_info.profile_info'"
     [description]="'settings_module.profile_info.profile_info_hint'"
   >
     <form [formGroup]="profileInfoForm" class="profile_info_form">
-      <laitron-input-form-field
+      <ecommerce-input-form-field
         formControlName="firstName"
         class="form_input"
         placeholdertext="{{
@@ -15,8 +15,8 @@
         [withLabel]="true"
         [isDisabled]="true"
       >
-      </laitron-input-form-field>
-      <laitron-input-form-field
+      </ecommerce-input-form-field>
+      <ecommerce-input-form-field
         formControlName="lastName"
         class="form_input"
         placeholdertext="{{
@@ -25,8 +25,8 @@
         [color]="inputColor.PRIMARY13"
         [withLabel]="true"
       >
-      </laitron-input-form-field>
-      <laitron-input-form-field
+      </ecommerce-input-form-field>
+      <ecommerce-input-form-field
         formControlName="username"
         class="form_input disable"
         placeholdertext="{{
@@ -35,24 +35,24 @@
         [color]="inputColor.PRIMARY13"
         [withLabel]="true"
       >
-      </laitron-input-form-field>
-      <laitron-input-form-field
+      </ecommerce-input-form-field>
+      <ecommerce-input-form-field
         formControlName="email"
         class="form_input disable"
         placeholdertext="{{ 'settings_module.profile_info.email' | translate }}"
         [color]="inputColor.PRIMARY13"
         [withLabel]="true"
       >
-      </laitron-input-form-field>
+      </ecommerce-input-form-field>
     </form>
-  </laitron-section-box>
+  </ecommerce-section-box>
 
-  <!-- <laitron-section-box
+  <!-- <ecommerce-section-box
     [title]="'settings_module.profile_info.password'"
     [description]="'settings_module.profile_info.password_hint'"
   >
     <form [formGroup]="passwordForm" class="password_form">
-      <laitron-input-form-field
+      <ecommerce-input-form-field
         formControlName="currentPassword"
         class="form_input"
         placeholdertext="{{
@@ -62,16 +62,16 @@
         [withLabel]="true"
         [isPassword]="true"
       >
-      </laitron-input-form-field>
+      </ecommerce-input-form-field>
     </form>
-  </laitron-section-box> -->
+  </ecommerce-section-box> -->
 
-  <!-- <laitron-section-box
+  <!-- <ecommerce-section-box
     [title]="'settings_module.profile_info.account_security'"
     [description]="'settings_module.profile_info.account_security_hint'"
   >
     <div class="account_security_actions">
-      <laitron-button
+      <ecommerce-button
         [buttonText]="'settings_module.profile_info.logout' | translate"
         [color]="inputColor.PRIMARY11"
         [shape]="inputShape.PRIMARY"
@@ -80,7 +80,7 @@
         [buttonIcon]="'logout'"
         iconDirection="left"
         class="action_btn"
-      ></laitron-button>
+      ></ecommerce-button>
     </div>
-  </laitron-section-box> -->
+  </ecommerce-section-box> -->
 </div>

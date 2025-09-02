@@ -17,7 +17,7 @@ export const PICK_FORMATS = {
 };
 
 @Component({
-  selector: 'laitron-date-picker',
+  selector: 'ecommerce-date-picker',
   templateUrl: './date-picker.component.html',
   styleUrls: ['./date-picker.component.sass'],
   providers: [

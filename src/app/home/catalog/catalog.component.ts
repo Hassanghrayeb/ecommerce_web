@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'laitron-home',
+  selector: 'ecommerce-home',
   templateUrl: './catalog.component.html',
   styleUrl: './catalog.component.sass',
 })

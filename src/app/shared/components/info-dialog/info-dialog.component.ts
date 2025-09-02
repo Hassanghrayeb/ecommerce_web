@@ -2,7 +2,7 @@ import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
-  selector: 'laitron-info-dialog',
+  selector: 'ecommerce-info-dialog',
   templateUrl: './info-dialog.component.html',
   styleUrl: './info-dialog.component.sass'
 })

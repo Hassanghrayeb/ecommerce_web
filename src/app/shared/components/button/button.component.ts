@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {InputColor, InputMode, InputShape, SizeEnum} from '../../enums/input-mode.enum';
 
 @Component({
-  selector: 'laitron-button',
+  selector: 'ecommerce-button',
   templateUrl: './button.component.html',
   styleUrl: './button.component.sass'
 })

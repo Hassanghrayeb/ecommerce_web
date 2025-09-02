@@ -7,13 +7,13 @@
     <span *ngIf="data.note" class="note">{{ data.note | translate: data.descriptionParams }}</span>
   </div>
   <div class="actions">
-    <laitron-button
+    <ecommerce-button
       *ngFor="let button of data.buttons"
       [buttonText]="button.label | translate"
       [color]="button.color"
       [shape]="button.shape"
       [mode]="button.mode"
       (buttonClick)="button.action ? button.action(0) : closeDialog()"
-    ></laitron-button>
+    ></ecommerce-button>
   </div>
 </div>

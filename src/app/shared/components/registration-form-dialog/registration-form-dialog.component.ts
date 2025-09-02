@@ -14,7 +14,7 @@ import {LoginFormDialogComponent} from "../../../landing/components/login-form-d
 import {AuthenticationService} from "../../services/authentication.service";
 
 @Component({
-  selector: 'laitron-registration-form-dialog',
+  selector: 'ecommerce-registration-form-dialog',
   templateUrl: './registration-form-dialog.component.html',
   styleUrl: './registration-form-dialog.component.sass'
 })

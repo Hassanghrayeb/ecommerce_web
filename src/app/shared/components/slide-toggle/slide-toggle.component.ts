@@ -2,7 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {InputColor, InputShape} from '../../enums/input-mode.enum';
 
 @Component({
-  selector: 'laitron-slide-toggle',
+  selector: 'ecommerce-slide-toggle',
   templateUrl: './slide-toggle.component.html',
   styleUrls: ['./slide-toggle.component.sass']
 })

@@ -10,7 +10,7 @@ import {AuthenticationService} from '../../../shared/services/authentication.ser
 import { RegistrationFormDialogComponent } from 'src/app/shared/components/registration-form-dialog/registration-form-dialog.component';
 
 @Component({
-  selector: 'laitron-login-form-dialog',
+  selector: 'ecommerce-login-form-dialog',
   templateUrl: './login-form-dialog.component.html',
   styleUrl: './login-form-dialog.component.sass'
 })

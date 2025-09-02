@@ -6,7 +6,7 @@ import {FormControl, FormGroup} from "@angular/forms";
 import {InputColor, InputShape} from "../../enums/input-mode.enum";
 
 @Component({
-  selector: 'laitron-sub-nav',
+  selector: 'ecommerce-sub-nav',
   templateUrl: './sub-nav.component.html',
   styleUrl: './sub-nav.component.sass',
 })

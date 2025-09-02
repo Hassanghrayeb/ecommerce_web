@@ -7,7 +7,7 @@ import { takeUntil } from 'rxjs/operators';
 
 
 @Component({
-  selector: 'laitron-success-dialog',
+  selector: 'ecommerce-success-dialog',
   templateUrl: './success-dialog.component.html',
   styleUrl: './success-dialog.component.sass'
 })

@@ -6,11 +6,11 @@
   </p>
 
   <div class="grid" *ngIf="!loading && !error">
-    <laitron-product-card
+    <ecommerce-product-card
       *ngFor="let p of products; trackBy: trackById"
       [product]="p"
       (add)="onAddProduct($event)"
     >
-    </laitron-product-card>
+    </ecommerce-product-card>
   </div>
 </section>

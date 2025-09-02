@@ -13,7 +13,7 @@ import { ConfigTypeEnum } from 'src/app/shared/enums/config.enum';
 import {RoleEnum} from "../../../../shared/enums/role.enum";
 
 @Component({
-  selector: 'laitron-user-form',
+  selector: 'ecommerce-user-form',
   templateUrl: './user-form.component.html',
   styleUrl: './user-form.component.sass'
 })

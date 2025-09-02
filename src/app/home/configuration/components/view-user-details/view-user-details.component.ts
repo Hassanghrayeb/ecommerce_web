@@ -6,7 +6,7 @@ import { ButtonModel } from 'src/app/shared/models/button.model';
 import { UserModel } from '../../pages/user-management/users.model';
 
 @Component({
-  selector: 'laitron-view-user-details',
+  selector: 'ecommerce-view-user-details',
   templateUrl: './view-user-details.component.html',
   styleUrl: './view-user-details.component.sass'
 })

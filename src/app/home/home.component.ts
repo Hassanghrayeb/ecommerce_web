@@ -3,7 +3,7 @@ import { PathsEnum } from '../shared/enums/path.enum';
 import { RoleEnum } from '../shared/enums/role.enum';
 
 @Component({
-  selector: 'laitron-home',
+  selector: 'ecommerce-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.sass'
 })

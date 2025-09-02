@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ProductModel } from 'src/app/home/configuration/models/product.model';
 
 @Component({
-  selector: 'laitron-product-card',
+  selector: 'ecommerce-product-card',
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.sass',
 })

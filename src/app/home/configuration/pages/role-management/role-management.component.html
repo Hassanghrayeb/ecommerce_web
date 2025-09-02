@@ -1,25 +1,25 @@
 <div class="list_wrapper">
-  <laitron-section-box [withBorder]="false">
+  <ecommerce-section-box [withBorder]="false">
     <div class="header">
       <p class="title">
         {{ 'settings_module.role_management.all_roles' | translate }}
         <span class="count">{{count}}</span>
       </p>
       <form [formGroup]="searchForm" class="right_section">
-        <laitron-input-form-field
+        <ecommerce-input-form-field
           formControlName="search"
           placeholdertext="{{'general.search' | translate}}"
           [color]="inputColor.PRIMARY13"
           [prefix]="'search'">
-        </laitron-input-form-field>
-        <laitron-button
+        </ecommerce-input-form-field>
+        <ecommerce-button
           [buttonText]="'settings_module.role_management.add_role' | translate"
           [color]="inputColor.PRIMARY11" [shape]="inputShape.PRIMARY" [mode]="inputMode.LIGHT"
           (buttonClick)="addRole()"
           [buttonIcon]="'add_circle_outline'"
           iconDirection="left"
           class="add_btn"
-        ></laitron-button>
+        ></ecommerce-button>
       </form>
     </div>
     <div>
@@ -28,5 +28,5 @@
         (more)="onPage($event)">
       </list-data-table>
     </div>
-  </laitron-section-box>
+  </ecommerce-section-box>
 </div>

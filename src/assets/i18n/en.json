@@ -35,6 +35,9 @@
       "company": "Company",
       "registration_date": "Registration Date"
     },
+    "products": {
+      "update_status_success": "Product status updated successfully"
+    },
     "roles": {
       "name": "Name"
     }

@@ -1,27 +1,27 @@
-<laitron-shared-dialog
+<ecommerce-shared-dialog
   [title]="'settings_module.user_management.user_form.view_user' | translate"
   [subTitle]="'settings_module.user_management.user_form.view_user_description' | translate"
   [actionButtons]="actionButtons">
   <form [formGroup]="detailsForm" class="body">
     <div class="section">
-      <laitron-input-form-field
+      <ecommerce-input-form-field
         formControlName="email"
         [color]="inputColor.PRIMARY12"
         [withLabel]="true"
         placeholdertext="{{'landing.email_address' | translate}}">
-      </laitron-input-form-field>
-      <laitron-input-form-field
+      </ecommerce-input-form-field>
+      <ecommerce-input-form-field
         formControlName="registrationDate"
         [color]="inputColor.PRIMARY12"
         [withLabel]="true"
         placeholdertext="{{'admin_module.users.registration_date' | translate}}">
-      </laitron-input-form-field>
-      <laitron-input-form-field
+      </ecommerce-input-form-field>
+      <ecommerce-input-form-field
         formControlName="roles"
         [color]="inputColor.PRIMARY12"
         [withLabel]="true"
         placeholdertext="{{'admin_module.users.access' | translate}}">
-      </laitron-input-form-field>
+      </ecommerce-input-form-field>
     </div>
   </form>
-</laitron-shared-dialog>
+</ecommerce-shared-dialog>

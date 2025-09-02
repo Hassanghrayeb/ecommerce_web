@@ -4,7 +4,7 @@ import { InputColor, InputShape } from '../../enums/input-mode.enum';
 import { DropdownOption } from '../../models/dropdown-option.model';
 
 @Component({
-  selector: 'laitron-radio-button',
+  selector: 'ecommerce-radio-button',
   templateUrl: './ai-radio-button.component.html',
   styleUrl: './ai-radio-button.component.sass'
 })

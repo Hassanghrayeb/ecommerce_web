@@ -3,7 +3,7 @@ import { AbstractControl, ControlValueAccessor, FormControl, NgControl } from '@
 import {InputColor, InputMode, InputShape} from '../../enums/input-mode.enum';
 
 @Component({
-  selector: 'laitron-textarea-form-field',
+  selector: 'ecommerce-textarea-form-field',
   templateUrl: './textarea-form-field.component.html',
   styleUrl: './textarea-form-field.component.sass'
 })

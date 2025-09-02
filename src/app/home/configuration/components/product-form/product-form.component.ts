@@ -9,7 +9,7 @@ import { UtilsService } from 'src/app/shared/services/utils.service';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'laitron-product-form',
+  selector: 'ecommerce-product-form',
   templateUrl: './product-form.component.html',
   styleUrl: './product-form.component.sass'
 })

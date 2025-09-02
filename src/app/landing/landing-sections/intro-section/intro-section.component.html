@@ -4,12 +4,12 @@
     <h1>{{ 'landing.title'|translate }}</h1>
     <p>{{ 'landing.description'|translate }}</p>
     <div class="action_btn">
-      <laitron-button [iconDirection]="'right'"
+      <ecommerce-button [iconDirection]="'right'"
                      [buttonIcon]="direction === 'rtl' ? 'north_west' : 'north_east'"
                      [shape]="inputShape.PRIMARY"
                      [color]="inputColor.LANDING_PRIMARY_23"
                      [buttonText]="'landing.register_title' | translate"
-                     (buttonClick)="openRegistrationDialog()"></laitron-button>
+                     (buttonClick)="openRegistrationDialog()"></ecommerce-button>
     </div>
   </div>
 </div>

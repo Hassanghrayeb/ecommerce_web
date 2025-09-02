@@ -14,7 +14,7 @@ import { HttpResponse } from '@angular/common/http';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'laitron-profile-information',
+  selector: 'ecommerce-profile-information',
   templateUrl: './profile-information.component.html',
   styleUrl: './profile-information.component.sass',
 })

@@ -3,7 +3,7 @@ import { RoleEnum } from 'src/app/shared/enums/role.enum';
 import { NavItem } from 'src/app/shared/models/nav-item.model';
 
 @Component({
-  selector: 'laitron-configuration',
+  selector: 'ecommerce-configuration',
   templateUrl: './configuration.component.html',
   styleUrl: './configuration.component.sass'
 })

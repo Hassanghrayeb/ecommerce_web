@@ -12,7 +12,7 @@ import { UserRegistrationModel } from 'src/app/landing/models/registration.model
 import { UsersRequestColumnDef } from './user-request.config';
 
 @Component({
-  selector: 'laitron-user-request-management',
+  selector: 'ecommerce-user-request-management',
   templateUrl: './user-request-management.component.html',
   styleUrl: './user-request-management.component.sass'
 })

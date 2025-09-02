@@ -22,7 +22,7 @@ import {debounceTime, takeUntil} from 'rxjs/operators';
 import {ViewUserDetailsComponent} from "../../components/view-user-details/view-user-details.component";
 
 @Component({
-  selector: 'laitron-user-management',
+  selector: 'ecommerce-user-management',
   templateUrl: './user-management.component.html',
   styleUrl: './user-management.component.sass'
 })

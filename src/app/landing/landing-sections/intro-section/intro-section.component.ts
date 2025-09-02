@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { RegistrationFormDialogComponent } from 'src/app/shared/components/registration-form-dialog/registration-form-dialog.component';
 
 @Component({
-  selector: 'laitron-intro-section',
+  selector: 'ecommerce-intro-section',
   templateUrl: './intro-section.component.html',
   styleUrl: './intro-section.component.sass'
 })

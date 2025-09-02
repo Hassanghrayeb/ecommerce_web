@@ -9,7 +9,7 @@ import { ConfigTypeEnum } from 'src/app/shared/enums/config.enum';
 import { PageChangeEvent } from 'src/app/shared/models/page-change-event.interface';
 
 @Component({
-  selector: 'laitron-product-list',
+  selector: 'ecommerce-product-list',
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.sass',
 })

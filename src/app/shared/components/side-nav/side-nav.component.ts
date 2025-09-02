@@ -7,7 +7,7 @@ import {PathsEnum} from "../../enums/path.enum";
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'laitron-side-nav',
+  selector: 'ecommerce-side-nav',
   templateUrl: './side-nav.component.html',
   styleUrl: './side-nav.component.sass',
 })

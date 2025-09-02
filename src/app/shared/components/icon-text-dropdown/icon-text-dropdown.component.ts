@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
-  selector: 'laitron-icon-text-dropdown',
+  selector: 'ecommerce-icon-text-dropdown',
   templateUrl: './icon-text-dropdown.component.html',
   styleUrl: './icon-text-dropdown.component.sass'
 })

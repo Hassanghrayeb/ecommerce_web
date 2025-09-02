@@ -1,33 +1,33 @@
 <div class="list_wrapper">
-  <laitron-section-box [withBorder]="false">
+  <ecommerce-section-box [withBorder]="false">
     <div class="header">
       <p class="title">
         {{ 'configuration_module.product_management.all_products' | translate }}
         <span class="count">{{ count }}</span>
       </p>
       <form [formGroup]="searchForm" class="right_section">
-        <laitron-input-form-field
+        <ecommerce-input-form-field
           formControlName="search"
           placeholdertext="{{'general.search' | translate}}"
           [color]="inputColor.PRIMARY13"
           [prefix]="'search'">
-        </laitron-input-form-field>
-        <laitron-button
+        </ecommerce-input-form-field>
+        <ecommerce-button
           [buttonText]="'configuration_module.product_management.add_product' | translate"
           [color]="inputColor.PRIMARY11" [shape]="inputShape.PRIMARY" [mode]="inputMode.LIGHT"
           (buttonClick)="addProduct()"
           [buttonIcon]="'add_circle_outline'"
           iconDirection="left"
           class="add_btn"
-        ></laitron-button>
-        <laitron-button
+        ></ecommerce-button>
+        <ecommerce-button
           [buttonText]="'configuration_module.product_management.view_low_stock' | translate"
           [color]="inputColor.PRIMARY11" [shape]="inputShape.PRIMARY" [mode]="inputMode.LIGHT"
           (buttonClick)="onViewLowStockProducts()"
           [buttonIcon]="'view_list'"
           iconDirection="left"
           class="add_btn"
-        ></laitron-button>
+        ></ecommerce-button>
       </form>
     </div>
     <div>
@@ -37,5 +37,5 @@
                        (more)="onPage($event)">
       </list-data-table>
     </div>
-  </laitron-section-box>
+  </ecommerce-section-box>
 </div>

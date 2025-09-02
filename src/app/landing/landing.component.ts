@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {InputColor, InputMode, InputShape} from "../shared/enums/input-mode.enum";
 
 @Component({
-  selector: 'laitron-landing',
+  selector: 'ecommerce-landing',
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.sass'
 })

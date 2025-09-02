@@ -4,7 +4,7 @@ import { CartItemModel } from '../../models/catalog.model';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'laitron-cart-panel',
+  selector: 'ecommerce-cart-panel',
   templateUrl: './cart-panel.component.html',
   styleUrl: './cart-panel.component.sass',
 })

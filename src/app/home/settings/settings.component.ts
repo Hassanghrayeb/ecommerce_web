@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavItem } from 'src/app/shared/models/nav-item.model';
 
 @Component({
-  selector: 'laitron-settings',
+  selector: 'ecommerce-settings',
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.sass'
 })

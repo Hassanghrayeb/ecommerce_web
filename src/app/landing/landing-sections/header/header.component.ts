@@ -9,7 +9,7 @@ import {LoginFormDialogComponent} from "../../components/login-form-dialog/login
 import {AuthenticationService} from "../../../shared/services/authentication.service";
 
 @Component({
-  selector: 'laitron-header',
+  selector: 'ecommerce-header',
   templateUrl: './header.component.html',
   styleUrl: './header.component.sass'
 })

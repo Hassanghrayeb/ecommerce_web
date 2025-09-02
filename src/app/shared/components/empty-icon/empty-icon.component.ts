@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import {InputColor} from "../../enums/input-mode.enum";
 
 @Component({
-  selector: 'laitron-empty-icon',
+  selector: 'ecommerce-empty-icon',
   templateUrl: './empty-icon.component.html',
   styleUrl: './empty-icon.component.sass'
 })

@@ -1,17 +1,17 @@
 <!-- <div class="list_wrapper">
-  <laitron-section-box [withBorder]="false">
+  <ecommerce-section-box [withBorder]="false">
     <div class="header">
       <p class="title">
         {{ 'configuration_module.product_management.all_products' | translate }}
         <span class="count">{{ count }}</span>
       </p>
       <form [formGroup]="searchForm" class="right_section">
-        <laitron-input-form-field
+        <ecommerce-input-form-field
           formControlName="search"
           placeholdertext="{{'general.search' | translate}}"
           [color]="inputColor.PRIMARY13"
           [prefix]="'search'">
-        </laitron-input-form-field>
+        </ecommerce-input-form-field>
       </form> 
     </div>
     <div>
@@ -19,24 +19,24 @@
                        [paginatorConfig]="paginatorConfig" (more)="onPage($event)">
       </list-data-table>
     </div>
-  </laitron-section-box>
+  </ecommerce-section-box>
 </div> -->
 
 
-<laitron-shared-dialog
+<ecommerce-shared-dialog
   [title]="'configuration_module.product_management.view_products' | translate"
   [subTitle]="'configuration_module.product_management.view_low_stock' | translate"
   [actionButtons]="actionButtons">
   
-  <laitron-section-box [withBorder]="false">
+  <ecommerce-section-box [withBorder]="false">
     <div class="header">
       <form [formGroup]="searchForm" class="right_section">
-        <laitron-input-form-field
+        <ecommerce-input-form-field
           formControlName="search"
           placeholdertext="{{'general.search' | translate}}"
           [color]="inputColor.PRIMARY13"
           [prefix]="'search'">
-        </laitron-input-form-field>
+        </ecommerce-input-form-field>
       </form> 
     </div>
     <div>
@@ -44,5 +44,5 @@
                        [paginatorConfig]="paginatorConfig" (more)="onPage($event)">
       </list-data-table>
     </div>
-  </laitron-section-box>
-  </laitron-shared-dialog>
+  </ecommerce-section-box>
+  </ecommerce-shared-dialog>

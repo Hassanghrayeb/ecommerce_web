@@ -3,7 +3,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {InputColor, InputShape} from "../../enums/input-mode.enum";
 
 @Component({
-  selector: 'laitron-confirmation-dialog',
+  selector: 'ecommerce-confirmation-dialog',
   templateUrl: './confirmation-dialog.component.html',
   styleUrl: './confirmation-dialog.component.sass'
 })

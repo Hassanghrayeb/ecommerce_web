@@ -4,7 +4,7 @@ import { InputColor, InputMode, InputShape } from '../../enums/input-mode.enum';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'laitron-shared-dialog',
+  selector: 'ecommerce-shared-dialog',
   templateUrl: './shared-dialog.component.html',
   styleUrl: './shared-dialog.component.sass'
 })

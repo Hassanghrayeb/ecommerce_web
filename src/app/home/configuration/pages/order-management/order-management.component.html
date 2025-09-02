@@ -1,17 +1,17 @@
 <div class="list_wrapper">
-  <laitron-section-box [withBorder]="false">
+  <ecommerce-section-box [withBorder]="false">
     <div class="header">
       <p class="title">
         {{ 'configuration_module.order_management.all_orders' | translate }}
         <span class="count">{{ count }}</span>
       </p>
       <form [formGroup]="searchForm" class="right_section">
-        <laitron-input-form-field
+        <ecommerce-input-form-field
           formControlName="search"
           placeholdertext="{{'general.search' | translate}}"
           [color]="inputColor.PRIMARY13"
           [prefix]="'search'">
-        </laitron-input-form-field>
+        </ecommerce-input-form-field>
       </form>
     </div>
     <div>
@@ -20,5 +20,5 @@
                        (more)="onPage($event)">
       </list-data-table>
     </div>
-  </laitron-section-box>
+  </ecommerce-section-box>
 </div>

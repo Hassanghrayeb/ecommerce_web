@@ -11,7 +11,7 @@ import { LowStockProductsColumnDef } from '../../pages/product-management/produc
 import { ButtonModel } from 'src/app/shared/models/button.model';
 
 @Component({
-  selector: 'laitron-view-low-stock',
+  selector: 'ecommerce-view-low-stock',
   templateUrl: './view-low-stock.component.html',
   styleUrl: './view-low-stock.component.sass'
 })

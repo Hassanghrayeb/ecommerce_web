@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Direction } from '@angular/cdk/bidi';
 
 @Component({
-  selector: 'laitron-page-title',
+  selector: 'ecommerce-page-title',
   templateUrl: './page-title.component.html',
   styleUrl: './page-title.component.sass'
 })
